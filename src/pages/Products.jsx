@@ -209,20 +209,22 @@ const Products = () => {
               </select>
 
               {/* View Mode Toggle */}
-              <div className="flex border border-gray-300 rounded-lg  ">
-                <button
-                  onClick={() => setViewMode('grid')}
-                  className={`p-2 ${viewMode === 'grid' ? 'wpc-gradient text-white' : 'bg-white text-gray-600'}`}
-                >
-                  <Grid size={18} />
-                </button>
-                <button
-                  onClick={() => setViewMode('list')}
-                  className={`p-2 ${viewMode === 'list' ? 'wpc-gradient text-white' : 'bg-white text-gray-600'}`}
-                >
-                  <List size={18} />
-                </button>
-              </div>
+              {window.innerWidth >= 768 && (
+                  <div className="flex border border-gray-300 rounded-lg">
+                    <button
+                      onClick={() => setViewMode('grid')}
+                      className={`p-2 ${viewMode === 'grid' ? 'wpc-gradient text-white' : 'bg-white text-gray-600'}`}
+                    >
+                      <Grid size={18} />
+                    </button>
+                    <button
+                      onClick={() => setViewMode('list')}
+                      className={`p-2 ${viewMode === 'list' ? 'wpc-gradient text-white' : 'bg-white text-gray-600'}`}
+                    >
+                      <List size={18} />
+                    </button>
+                  </div>
+                )}
 
               {/* Filters Toggle */}
               <Button
@@ -288,90 +290,93 @@ const Products = () => {
 
           {/* Products Display */}
           {viewMode === 'grid' ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              {filteredProducts.map((product, index) => (
-                <motion.div
-                  key={product.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                >
-                  <Card className="card-hover overflow-hidden group h-full">
-                    <div className="relative">
-                      <img
-                        className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                        alt={product.name}
-                        src={product.image}
-                        loading="lazy"
-                      />
-                      
-                      {/* Overlay Actions */}
-                      <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <div className="flex space-x-3">
-                          <button className="bg-white/90 hover:bg-white text-gray-800 p-2 rounded-full transition-colors">
-                            <Eye size={18} />
-                          </button>
-                          <button className="bg-white/90 hover:bg-white text-gray-800 p-2 rounded-full transition-colors">
-                            <Heart size={18} />
-                          </button>
-                        </div>
-                      </div>
-                      
-                      {/* Tags */}
-                      <div className="absolute top-3 left-3">
-                        {product.tags.slice(0, 2).map((tag) => (
-                          <span
-                            key={tag}
-                            className="product-tag text-white text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            {filteredProducts.map((product, index) => (
+              <motion.div
+                key={product.id}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+              >
+                <Card className="card-hover overflow-hidden group h-full flex flex-col">
+                  {/* Product Image */}
+                  <div className="relative">
+                    <img
+                      className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                      alt={product.name}
+                      src={product.image}
+                      loading="lazy"
+                    />
 
-                      {/* Category Badge */}
-                      <div className="absolute top-3 right-3">
-                        <span className="bg-white/90 text-gray-800 text-xs font-semibold px-2 py-1 rounded-full">
-                          {product.category}
+                    {/* Tags - hide on mobile, show on desktop */}
+                    <div className="hidden md:flex absolute top-3 left-3 flex-wrap gap-1">
+                      {product.tags.slice(0, 2).map((tag) => (
+                        <span
+                          key={tag}
+                          className="product-tag text-white text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1"
+                        >
+                          {tag}
                         </span>
-                      </div>
+                      ))}
                     </div>
-                    
-                    <CardContent className="p-6">
-                      <h3 className="text-lg font-semibold mb-2 heading-tertiary transition-colors group-hover:text-wpc-warm">
-                        {product.name}
-                      </h3>
-                      
-                      <div className="flex items-center mb-2">
-                        <div className="flex mr-2">
-                          {renderStars(getAverageRating(product.reviews))}
-                        </div>
-                        <span className="text-sm text-gray-500">
-                          ({product.reviews?.length || 0} reviews)
-                        </span>
+
+
+                    {/* Category Badge */}
+                    <div className="absolute top-2 left-2 md:right-2 md:left-auto">
+                      <span className="bg-white/90 text-gray-800 text-[10px] font-semibold px-1.5 py-0.5 rounded-full">
+                        {product.category}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Product Content */}
+                  <CardContent className="p-3 md:p-4 flex flex-col flex-grow">
+                    {/* Name */}
+                    <h3 className="text-xs md:text-lg font-semibold mb-1 heading-tertiary transition-colors group-hover:text-wpc-warm line-clamp-2">
+                      {product.name}
+                    </h3>
+
+                    {/* Rating */}
+                    <div className="flex items-center mb-1">
+                      <div className="flex mr-1">
+                        {renderStars(getAverageRating(product.reviews))}
                       </div>
-                      
-                      <p className="text-body mb-2 text-sm">
-                        Color: <span className="font-medium">{product.color}</span>
-                      </p>
-                      
-                      <div className="flex items-center justify-between mb-4">
-                        <div className="text-2xl font-bold" style={{ color: 'hsl(var(--wpc-warm))' }}>{product.sqFeetPrice}</div>
-                        <div className="text-sm text-gray-500">per sq ft</div>
+                      <span className="hidden md:inline text-[10px] md:text-sm text-gray-500">
+                        ({product.reviews?.length || 0} reviews)
+                      </span>
+                    </div>
+
+                    {/* Color */}
+                    <p className="text-body mb-1 text-[11px] md:text-sm">
+                      Color: <span className="font-medium">{product.color}</span>
+                    </p>
+
+                    {/* Price */}
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="text-sm md:text-2xl font-bold" style={{ color: 'hsl(var(--wpc-warm))' }}>
+                        {product.sqFeetPrice}
                       </div>
-                      
-                      <p className="text-body text-sm mb-4 line-clamp-2">{product.description}</p>
-                      
+                      <div className="hidden md:block text-[10px] md:text-sm text-gray-500">per sq ft</div>
+                    </div>
+
+                    {/* Description */}
+                    <p className="text-body text-[11px] md:text-sm mb-2 line-clamp-2 min-h-[32px]">
+                      {product.description}
+                    </p>
+
+                    {/* View Button at Bottom */}
+                    <div className="mt-auto">
                       <Link to={`/product/${product.id}`} className="block">
-                        <Button className="w-full wpc-btn-primary text-sm">
+                        <Button className="w-full wpc-btn-primary text-[11px] md:text-sm py-1">
                           View Details
                         </Button>
                       </Link>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
           ) : (
             /* List View */
             <div className="space-y-6">

@@ -229,40 +229,40 @@ export const products = [
       { name: "Rajesh Kumar", rating: 5, comment: "Excellent acoustic properties. Our office is much quieter now." },
       { name: "Priya Sharma", rating: 4, comment: "Great quality ceiling panels. Professional installation." }
     ]
-  },
-  {
-    id: 8,
-    name: "Designer WPC False Ceiling",
-    category: "ceiling",
-    color: "Premium Oak",
-    price: 120,
-    sqFeetPrice: "₹120/sq ft",
-    image: "https://images.unsplash.com/photo-1571055107734-b2deaa729b0d?w=800&h=600&fit=crop",
-    tags: ["ceiling", "designer", "premium"],
-    description: "Elegant designer false ceiling with integrated lighting solutions for modern luxury spaces.",
-    features: [
-      "Custom design options",
-      "LED integration ready",
-      "Premium wood finish",
-      "Easy maintenance",
-      "Waterproof coating"
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1571055107734-b2deaa729b0d?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop"
-    ],
-    pricing: [
-      { project: "Luxury Home", price: "₹115/sq ft" },
-      { project: "Hotel Suite", price: "₹125/sq ft" },
-      { project: "Premium Office", price: "₹120/sq ft" },
-      { project: "Showroom", price: "₹118/sq ft" }
-    ],
-    reviews: [
-      { name: "Amit Verma", rating: 5, comment: "Absolutely stunning ceiling design. Transformed our entire home." },
-      { name: "Sneha Reddy", rating: 5, comment: "Professional service and beautiful finish. Highly recommended!" }
-    ]
   }
+  // {
+  //   id: 8,
+  //   name: "Designer WPC False Ceiling",
+  //   category: "ceiling",
+  //   color: "Premium Oak",
+  //   price: 120,
+  //   sqFeetPrice: "₹120/sq ft",
+  //   image: "https://images.unsplash.com/photo-1571055107734-b2deaa729b0d?w=800&h=600&fit=crop",
+  //   tags: ["ceiling", "designer", "premium"],
+  //   description: "Elegant designer false ceiling with integrated lighting solutions for modern luxury spaces.",
+  //   features: [
+  //     "Custom design options",
+  //     "LED integration ready",
+  //     "Premium wood finish",
+  //     "Easy maintenance",
+  //     "Waterproof coating"
+  //   ],
+  //   gallery: [
+  //     "https://images.unsplash.com/photo-1571055107734-b2deaa729b0d?w=800&h=600&fit=crop",
+  //     "https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=800&h=600&fit=crop",
+  //     "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop"
+  //   ],
+  //   pricing: [
+  //     { project: "Luxury Home", price: "₹115/sq ft" },
+  //     { project: "Hotel Suite", price: "₹125/sq ft" },
+  //     { project: "Premium Office", price: "₹120/sq ft" },
+  //     { project: "Showroom", price: "₹118/sq ft" }
+  //   ],
+  //   reviews: [
+  //     { name: "Amit Verma", rating: 5, comment: "Absolutely stunning ceiling design. Transformed our entire home." },
+  //     { name: "Sneha Reddy", rating: 5, comment: "Professional service and beautiful finish. Highly recommended!" }
+  //   ]
+  // }
 ];
 
 export const getProductById = (id) => {
