@@ -94,7 +94,7 @@ const HeroCarousel = () => {
                       initial={{ opacity: 0, y: 50 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8, delay: 0.2 }}
-                      className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 heading-primary"
+                      className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 heading-primary headin-carousal"
                       style={{ textShadow: '0 4px 8px rgba(0, 0, 0, 0.3)' }}
                     >
                       {slide.title}
@@ -163,21 +163,21 @@ const HeroCarousel = () => {
       </div>
 
       {/* Navigation Arrows */}
-      {/* <button
+       <button
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm"
+        className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm hidden md:flex"
         aria-label="Previous slide"
       >
         <ChevronLeft size={24} />
-      </button> */}
+      </button> 
       
-      {/* <button
+       <button
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm"
+        className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm hidden md:flex"
         aria-label="Next slide"
       >
         <ChevronRight size={24} />
-      </button> */}
+      </button> 
 
       {/* Slide Indicators */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3">

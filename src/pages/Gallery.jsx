@@ -32,7 +32,7 @@ const Gallery = () => {
   const galleryCategories = [
     {
       id: 'kitchen',
-      name: 'WPC Kitchen Cabinets',
+      name: 'Kitchen Cabinets',
       icon: <ChefHat size={32} />,
       description: 'Modern modular kitchen solutions with premium WPC materials',
       shortDesc: 'Waterproof modular kitchens',
@@ -345,7 +345,7 @@ const Gallery = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl text-white/90 max-w-3xl mx-auto"
+            className="text-xl text-white/90 max-w-3xl mx-auto" style={{color: 'hsl(var(--wpc-text-secondary))' }}
           >
             Explore our comprehensive collection of WPC solutions for every space in your home and office
           </motion.p>

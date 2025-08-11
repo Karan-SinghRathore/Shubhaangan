@@ -22,16 +22,16 @@ const StatsCounter = () => {
   }, []);
 
   return (
-    <section className="py-20 hero-gradient">
+    <section className="pb-20 hero-gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center" style={{ color: 'hsl(var(--wpc-text-primary))' }}>
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-12 text-center" style={{ color: 'hsl(var(--wpc-text-primary))' }}>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            className="space-y-4"
+            className="space-y-4 "
           >
-            <div className="bg-white/10 backdrop-blur-lg rounded-full w-24 h-24 mx-auto flex items-center justify-center mb-6">
+            <div className="bg-white/10 backdrop-blur-lg rounded-full w-24 h-24 mx-auto flex items-center justify-center mb-6 ">
               <Users size={40} />
             </div>
             <div className="text-5xl font-bold animate-counter">{customerCount}+</div>

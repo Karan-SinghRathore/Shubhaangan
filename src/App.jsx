@@ -2,14 +2,11 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { Toaster } from '@/components/ui/toaster';
+import ScrollToTop from "@/components/ScrollToTop";
 
-// Eager load Home page for better initial performance
 import Home from '@/pages/Home.jsx';
-
-// Lazy load other pages
 const Products = lazy(() => import('@/pages/Products.jsx'));
 const ProductDetail = lazy(() => import('@/pages/ProductDetail.jsx'));
-// const Ceiling = lazy(() => import('@/pages/Ceiling.jsx'));
 const Gallery = lazy(() => import('@/pages/Gallery.jsx'));
 const GalleryCategory = lazy(() => import('@/pages/GalleryCategory.jsx'));
 const About = lazy(() => import('@/pages/About.jsx'));
@@ -39,13 +36,13 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
+        <ScrollToTop />
         <div className="min-h-screen scroll-optimized">
           <Suspense fallback={<LoadingSpinner />}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
               <Route path="/product/:id" element={<ProductDetail />} />
-              {/* <Route path="/ceiling" element={<Ceiling />} /> */}
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/gallery/:categoryId" element={<GalleryCategory />} />
               <Route path="/about" element={<About />} />

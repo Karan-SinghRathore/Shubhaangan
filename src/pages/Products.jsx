@@ -191,12 +191,12 @@ const Products = () => {
             </div>
 
             {/* Controls */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 overflow-hidden ">
               {/* Sort Dropdown */}
               <select
                 value={sortBy}
                 onChange={(e) => handleSort(e.target.value)}
-                className="px-3 py-2 border-2 rounded-lg text-sm transition-colors duration-200"
+                className="px-1 py-2 border-2 rounded-lg text-sm transition-colors duration-200 overflow-hidden"
                 style={{
                   borderColor: 'hsl(var(--wpc-accent))',
                   color: 'hsl(var(--wpc-text-primary))'
@@ -209,7 +209,7 @@ const Products = () => {
               </select>
 
               {/* View Mode Toggle */}
-              <div className="flex border border-gray-300 rounded-lg overflow-hidden">
+              <div className="flex border border-gray-300 rounded-lg  ">
                 <button
                   onClick={() => setViewMode('grid')}
                   className={`p-2 ${viewMode === 'grid' ? 'wpc-gradient text-white' : 'bg-white text-gray-600'}`}
@@ -228,7 +228,7 @@ const Products = () => {
               <Button
                 onClick={() => setShowFilters(!showFilters)}
                 variant="outline"
-                className="border-2 transition-all duration-200"
+                className="border-2 transition-all duration-200 overflow-hidden" 
                 style={{
                   borderColor: 'hsl(var(--wpc-accent))',
                   color: 'hsl(var(--wpc-warm))',

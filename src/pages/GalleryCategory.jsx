@@ -41,7 +41,7 @@ const GalleryCategory = () => {
   const categoryData = {
     kitchen: {
       id: 'kitchen',
-      name: 'WPC Kitchen Cabinets',
+      name: 'Kitchen Cabinets',
       icon: <ChefHat size={40} />,
       description: 'Transform your kitchen with our premium WPC modular solutions',
       longDescription: 'Our WPC kitchen cabinets combine functionality with style, offering waterproof, termite-resistant solutions that last for decades. Perfect for Indian cooking environments with high moisture and heat.',
@@ -227,14 +227,14 @@ const GalleryCategory = () => {
               className="text-white"
             >
               <div className="flex items-center space-x-4 mb-6">
-                <div className="bg-white/20 backdrop-blur-sm p-3 rounded-xl">
+                <div className="bg-white/20 backdrop-blur-sm p-3 rounded-xl" style={{color: 'hsl(var(--wpc-accent))'}}>
                   {category.icon}
                 </div>
                 <div>
-                  <h1 className="text-4xl md:text-5xl font-bold mb-2">{category.name}</h1>
-                  <div className="flex items-center space-x-4 text-sm">
-                    <div className="flex items-center">
-                      <Star className="text-yellow-400 fill-current mr-1" size={16} />
+                  <h1 className="text-4xl md:text-5xl font-bold mb-2 heading-primary">{category.name}</h1>
+                  <div className="flex items-center space-x-4 text-sm heading-primary   ">
+                    <div className="flex items-center ">
+                      <Star className="text-yellow-400 fill-current mr-1 " size={16} />
                       <span>{category.rating}/5</span>
                     </div>
                     <span>•</span>
@@ -243,20 +243,20 @@ const GalleryCategory = () => {
                 </div>
               </div>
               
-              <p className="text-xl text-white/90 mb-6">{category.longDescription}</p>
+              <p className="text-xl text-white/90 mb-6 heading-secondary">{category.longDescription}</p>
               
               <div className="grid grid-cols-3 gap-4 mb-8">
                 <div className="text-center">
-                  <div className="text-2xl font-bold">{category.priceRange}</div>
-                  <div className="text-sm text-white/80">Price Range</div>
+                  <div className="text-2xl font-bold heading-secondary">{category.priceRange}</div>
+                  <div className="text-sm text-white/80 heading-secondary">Price Range</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold">{category.projectTime}</div>
-                  <div className="text-sm text-white/80">Project Time</div>
+                  <div className="text-2xl font-bold heading-secondary">{category.projectTime}</div>
+                  <div className="text-sm text-white/80 heading-secondary">Project Time</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold">{category.warranty}</div>
-                  <div className="text-sm text-white/80">Warranty</div>
+                  <div className="text-2xl font-bold heading-secondary">{category.warranty}</div>
+                  <div className="text-sm text-white/80 heading-secondary">Warranty</div>
                 </div>
               </div>
               

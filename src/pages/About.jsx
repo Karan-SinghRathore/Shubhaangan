@@ -10,7 +10,7 @@ const About = () => {
   const values = [{
     icon: <Award size={40} />,
     title: "Quality Excellence",
-    description: "We never compromise on quality. Every WPC product is carefully crafted and tested to meet our high standards."
+    description: "We never compromise on quality. Every WPC/UPVC product is carefully crafted and tested to meet our high standards."
   }, {
     icon: <Users size={40} />,
     title: "Customer First",
@@ -18,7 +18,7 @@ const About = () => {
   }, {
     icon: <Lightbulb size={40} />,
     title: "Innovation",
-    description: "We stay ahead of trends and continuously innovate to bring you the latest in WPC technology and sustainable design."
+    description: "We stay ahead of trends and continuously innovate to bring you the latest in WPC/UPVC technology and sustainable design."
   }, {
     icon: <Heart size={40} />,
     title: "Passion",
@@ -44,7 +44,7 @@ const About = () => {
   <FloatingActions />
       <Helmet>
         <title>About Us - ShubhAangan | Our Story & Values</title>
-        <meta name="description" content="Learn about ShubhAangan's journey, values, and team. Discover how we became a trusted name in premium WPC modular solutions with over 20 years of experience." />
+        <meta name="description" content="Learn about ShubhAangan's journey, values, and team. Discover how we became a trusted name in premium WPC/UPVC modular solutions with over 20 years of experience." />
       </Helmet>
 
       <Navbar />
@@ -71,7 +71,7 @@ const About = () => {
         }} transition={{
           duration: 0.6,
           delay: 0.2
-        }} className="text-xl text-large max-w-3xl mx-auto" style={{ color: 'hsl(var(--wpc-text-secondary))' }}>Crafting beautiful spaces with premium WPC materials for over two decades</motion.p>
+        }} className="text-xl text-large max-w-3xl mx-auto" style={{ color: 'hsl(var(--wpc-text-secondary))' }}>Crafting beautiful spaces with premium WPC/UPVC materials for over two decades</motion.p>
         </div>
       </section>
 
@@ -102,8 +102,8 @@ const About = () => {
               <h2 className="text-4xl font-bold heading-secondary">Our Story</h2>
               <p className="text-lg text-gray-700">
                 Founded in 2004, ShubhAangan began as a small family business with a simple mission:
-                to provide premium quality WPC materials that transform ordinary spaces into extraordinary ones.
-                What started in a modest workshop has grown into a trusted name in the WPC furniture industry.
+                to provide premium quality WPC and UPVC materials that transform ordinary spaces into extraordinary ones.
+                What started in a modest workshop has grown into a trusted name in the WPC and UPVC furniture industry.
               </p>
               <p className="text-lg text-gray-700">
                 Over the years, we've completed thousands of projects, from cozy homes to grand commercial spaces. 
@@ -112,7 +112,7 @@ const About = () => {
               </p>
               <p className="text-lg text-gray-700">
                 Today, ShubhAangan stands as a testament to the power of passion, dedication, and unwavering
-                commitment to craftsmanship. We continue to evolve with eco-friendly WPC technology and innovative designs
+                commitment to craftsmanship. We continue to evolve with eco-friendly WPC and UPVC technology and innovative designs
                 while staying true to our core values of quality and sustainability.
               </p>
             </motion.div>
@@ -222,8 +222,8 @@ const About = () => {
                 <Target size={40} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-              <p className="text-lg text-white/90">
-                To transform spaces and enrich lives through premium quality WPC solutions,
+              <p className="text-lg text-white/90" style={{color: 'hsl(var(--wpc-text-secondary))'}}>
+                To transform spaces and enrich lives through premium quality WPC/UPVC solutions,
                 exceptional craftsmanship, and unparalleled customer service. We strive
                 to make every project a sustainable masterpiece.
               </p>
@@ -242,8 +242,8 @@ const About = () => {
                 <Lightbulb size={40} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-              <p className="text-lg text-white/90">
-                To be the leading WPC solutions company recognized for innovation, sustainability, and
+              <p className="text-lg text-white/90" style={{color: 'hsl(var(--wpc-text-secondary))'}}>
+                To be the leading WPC/UPVC solutions company recognized for innovation, sustainability, and
                 customer satisfaction. We envision a world where beautiful, eco-friendly
                 spaces are accessible to everyone.
               </p>
