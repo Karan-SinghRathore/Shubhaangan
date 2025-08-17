@@ -7,7 +7,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { getProductById, products } from '@/data/products';
+import { getProductById, products, priceNote } from '@/data/products';
 import FloatingActions from '@/components/FloatingActions';
 
 const ProductDetail = () => {
