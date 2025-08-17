@@ -487,7 +487,7 @@ const Products = () => {
                 setSearchTerm('');
                 setSelectedCategory('all');
                 setSelectedPriceRange('all');
-                setFilteredProducts(products);
+                setSortBy('name');
               }}>
                 Clear all filters
               </Button>
