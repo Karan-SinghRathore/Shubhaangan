@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { products, getProductsByCategory } from '@/data/products';
+import { debounce, getSearchableText, sortFunctions } from '@/utils/productFilters';
 import FloatingActions from '@/components/FloatingActions';
 import SEO from '@/components/SEO';
 
@@ -16,6 +17,7 @@ const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [viewMode, setViewMode] = useState('grid'); // grid or list
   const [searchTerm, setSearchTerm] = useState('');
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('name'); // name, price-low, price-high, rating
   const [showFilters, setShowFilters] = useState(false);
 
@@ -37,6 +39,16 @@ const Products = () => {
   ];
 
   const [selectedPriceRange, setSelectedPriceRange] = useState('all');
+
+  // Debounced search effect
+  const debouncedSetSearch = useMemo(
+    () => debounce((term) => setDebouncedSearchTerm(term), 300),
+    []
+  );
+
+  useEffect(() => {
+    debouncedSetSearch(searchTerm);
+  }, [searchTerm, debouncedSetSearch]);
 
   // Optimized handlers using useCallback
   const handleCategoryChange = useCallback((categoryId) => {
@@ -65,31 +77,16 @@ const Products = () => {
       filtered = filtered.filter(p => p.price >= range.min && p.price <= range.max);
     }
 
-    // Apply search filter
-    if (searchTerm) {
-      const searchLower = searchTerm.toLowerCase();
-      filtered = filtered.filter(p =>
-        p.name.toLowerCase().includes(searchLower) ||
-        p.description.toLowerCase().includes(searchLower) ||
-        (p.color && p.color.toLowerCase().includes(searchLower))
-      );
+    // Apply search filter using optimized search
+    if (debouncedSearchTerm) {
+      const searchLower = debouncedSearchTerm.toLowerCase();
+      filtered = filtered.filter(p => getSearchableText(p).includes(searchLower));
     }
 
-    // Apply sorting
-    return filtered.sort((a, b) => {
-      switch (sortBy) {
-        case 'price-low':
-          return a.price - b.price;
-        case 'price-high':
-          return b.price - a.price;
-        case 'rating':
-          return (b.reviews?.reduce((acc, r) => acc + r.rating, 0) / b.reviews?.length || 0) -
-                 (a.reviews?.reduce((acc, r) => acc + r.rating, 0) / a.reviews?.length || 0);
-        default:
-          return a.name.localeCompare(b.name);
-      }
-    });
-  }, [selectedCategory, selectedPriceRange, searchTerm, sortBy]);
+    // Apply sorting using optimized sort functions
+    const sortFunction = sortFunctions[sortBy] || sortFunctions.name;
+    return filtered.sort(sortFunction);
+  }, [selectedCategory, selectedPriceRange, debouncedSearchTerm, sortBy]);
 
   const getAverageRating = (reviews) => {
     if (!reviews || reviews.length === 0) return 0;
