@@ -21,10 +21,10 @@ export const products = [
       "/images/ig-104-glossy.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹380/sq ft" },
+      { project: "Commercial Space", price: "₹420/sq ft" },
+      { project: "Luxury Villa", price: "₹450/sq ft" },
+      { project: "Office Complex", price: "₹400/sq ft" }
     ],
     reviews: [
       { name: "Anjali Sharma", rating: 5, comment: "Absolutely stunning glossy finish! Made our kitchen look so elegant and premium." },
@@ -35,8 +35,8 @@ export const products = [
     id: 8,
     name: "Glossy Interio Sheets",
     category: "glossy",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 400,
+    sqFeetPrice: "₹400 onwards",
     image: "/images/ig-105-glossy.webp",
     tags: ["glossy", "premium"],
     description: "Premium quality glossy sheets with mirror-like finish that reflects light beautifully. Perfect for modern kitchens, bathrooms, and contemporary interiors where style meets functionality.",
@@ -53,10 +53,10 @@ export const products = [
       "/images/ig-107-glossy.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹380/sq ft" },
+      { project: "Commercial Space", price: "₹420/sq ft" },
+      { project: "Luxury Villa", price: "₹450/sq ft" },
+      { project: "Office Complex", price: "₹400/sq ft" }
     ],
     reviews: [
       { name: "Priya Mehta", rating: 5, comment: "Excellent shine and finish! Our bathroom looks like a 5-star hotel now." },
@@ -67,8 +67,8 @@ export const products = [
     id: 9,
     name: "Glossy Interio Sheets",
     category: "glossy",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 400,
+    sqFeetPrice: "₹400 onwards",
     image: "/images/ig-108-glossy.webp",
     tags: ["glossy", "premium"],
     description: "Premium quality glossy sheets with mirror-like finish that reflects light beautifully. Perfect for modern kitchens, bathrooms, and contemporary interiors where style meets functionality.",
@@ -85,10 +85,10 @@ export const products = [
       "/images/ig-110-glossy.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹380/sq ft" },
+      { project: "Commercial Space", price: "₹420/sq ft" },
+      { project: "Luxury Villa", price: "₹450/sq ft" },
+      { project: "Office Complex", price: "₹400/sq ft" }
     ],
     reviews: [
       { name: "Ramesh Gupta", rating: 4, comment: "Great product with amazing glossy finish. Highly recommend for modern homes." },
@@ -99,8 +99,8 @@ export const products = [
     id: 10,
     name: "Glossy Interio Sheets",
     color: "White Pearl",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 400,
+    sqFeetPrice: "₹400 onwards",
     image: "/images/ig-111-glossy.webp",
     tags: ["glossy", "premium"],
     description: "Premium quality glossy sheets with mirror-like finish that reflects light beautifully. Perfect for modern kitchens, bathrooms, and contemporary interiors where style meets functionality.",
@@ -117,10 +117,10 @@ export const products = [
       "/images/ig-113-glossy.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹380/sq ft" },
+      { project: "Commercial Space", price: "₹420/sq ft" },
+      { project: "Luxury Villa", price: "₹450/sq ft" },
+      { project: "Office Complex", price: "₹400/sq ft" }
     ],
     reviews: [
       { name: "Karan Agarwal", rating: 4, comment: "Beautiful white pearl finish that adds luxury to our space. Very satisfied!" },
@@ -131,8 +131,8 @@ export const products = [
     id: 11,
     name: "Glossy Interio Sheets",
     category: "glossy",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 400,
+    sqFeetPrice: "₹400 onwards",
     image: "/images/ig-114-glossy.webp",
     tags: ["glossy", "premium"],
     description: "Premium quality glossy sheets with mirror-like finish that reflects light beautifully. Perfect for modern kitchens, bathrooms, and contemporary interiors where style meets functionality.",
@@ -150,10 +150,10 @@ export const products = [
       "/images/ig-118-glossy.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹380/sq ft" },
+      { project: "Commercial Space", price: "₹420/sq ft" },
+      { project: "Luxury Villa", price: "₹450/sq ft" },
+      { project: "Office Complex", price: "₹400/sq ft" }
     ],
     reviews: [
       { name: "Deepak Malhotra", rating: 5, comment: "Outstanding glossy finish! The reflection quality is excellent for our modern office." },
@@ -164,8 +164,8 @@ export const products = [
     id: 12,
     name: "Texture Interio Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/it-203-texture.webp",
     tags: ["texture", "Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -182,10 +182,10 @@ export const products = [
       "/images/it-205-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Ashish Patel", rating: 4, comment: "Amazing texture that looks like real wood! Perfect for our bedroom wardrobe." },
@@ -196,8 +196,8 @@ export const products = [
     id: 13,
     name: "Texture Interio Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/it-206-texture.webp",
     tags: ["texture", "Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -214,10 +214,10 @@ export const products = [
       "/images/it-208-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Rakesh Kumar", rating: 5, comment: "Excellent textured finish! Looks and feels like natural wood. Great quality!" },
@@ -228,8 +228,8 @@ export const products = [
     id: 14,
     name: "Texture Interio Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/it-211-texture.webp",
     tags: ["texture", "Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -246,10 +246,10 @@ export const products = [
       "/images/it-213-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Suresh Yadav", rating: 4, comment: "Good texture quality with realistic wood grain. Satisfied with the purchase." },
@@ -260,8 +260,8 @@ export const products = [
     id: 15,
     name: "Texture Interio Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/it-215-texture.webp",
     tags: ["texture", "Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -278,10 +278,10 @@ export const products = [
       "/images/it-218-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Ankit Joshi", rating: 4, comment: "Great textured surface with excellent durability. Recommended for interiors." },
@@ -292,8 +292,8 @@ export const products = [
     id: 16,
     name: "Texture Interio Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/it-219-texture.webp",
     tags: ["texture", "Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -310,10 +310,10 @@ export const products = [
       "/images/it-221 -texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Manoj Verma", rating: 3, comment: "Decent texture but could be better. Average quality for the price." },
@@ -324,8 +324,8 @@ export const products = [
     id: 17,
     name: "Texture Interio Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/it-222-texture.webp",
     tags: ["texture", "Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -342,10 +342,10 @@ export const products = [
       "/images/it-223-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Rajat Goel", rating: 5, comment: "Fantastic texture quality! The wood grain pattern is very realistic and appealing." },
@@ -356,8 +356,8 @@ export const products = [
     id: 18,
     name: "Texture Interio Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/it-224-texture.webp",
     tags: ["texture", "Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -374,10 +374,10 @@ export const products = [
       "/images/it-226-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "���520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Amit Bansal", rating: 4, comment: "Very good texture design. The wood pattern adds elegance to our interiors." },
@@ -387,8 +387,8 @@ export const products = [
     id: 19,
     name: "Texture Interio Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/it-227-texture.webp",
     tags: ["texture", "Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -405,10 +405,10 @@ export const products = [
       "/images/it-229-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Vinod Sharma", rating: 4, comment: "Good quality textured sheets with nice wood grain effect. Happy with the result." },
@@ -419,8 +419,8 @@ export const products = [
     id: 20,
     name: "Texture Interio Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/it-231-texture.webp",
     tags: ["texture", "Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -437,10 +437,10 @@ export const products = [
       "/images/it-233-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Harish Iyer", rating: 5, comment: "Superb textured finish! The natural wood look is amazing for our dining room." },
@@ -451,8 +451,8 @@ export const products = [
     id: 21,
     name: "Texture Interio Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/it-234-texture.webp",
     tags: ["texture", "Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -469,10 +469,10 @@ export const products = [
       "/images/it-236-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Sachin Thakur", rating: 3, comment: "Average texture quality. Expected better wood grain definition for the price." },
@@ -483,8 +483,8 @@ export const products = [
     id: 22,
     name: "Texture Interio Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/it-237-texture.webp",
     tags: ["texture", "Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -501,10 +501,10 @@ export const products = [
       "/images/it-238-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Deepika Chopra", rating: 5, comment: "Excellent texture quality! The wood grain looks so realistic and beautiful." },
@@ -515,8 +515,8 @@ export const products = [
     id: 23,
     name: "Texture Pro Interio Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/h-301-texture.webp",
     tags: ["texture", "Pro-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -533,10 +533,10 @@ export const products = [
       "/images/h-303-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Nitin Agarwal", rating: 5, comment: "Outstanding Pro Interio quality! The texture is very detailed and premium." },
@@ -547,8 +547,8 @@ export const products = [
     id: 24,
     name: "Texture Pro Interio Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/h-304-texture.webp",
     tags: ["texture", "Pro-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -565,10 +565,10 @@ export const products = [
       "/images/h-305-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Rahul Kapoor", rating: 4, comment: "Excellent Pro Interio texture with superior finish. Worth the investment!" },
@@ -579,8 +579,8 @@ export const products = [
     id: 25,
     name: "Texture Archi Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/at-402-texture.webp",
     tags: ["texture", "Archi-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -597,10 +597,10 @@ export const products = [
       "/images/it-404-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Archit Sinha", rating: 5, comment: "Superb Archi series texture! The architectural finish is perfect for modern designs." },
@@ -611,8 +611,8 @@ export const products = [
     id: 26,
     name: "Texture Archi Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/at-405-texture.webp",
     tags: ["texture", "Archi-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -629,10 +629,10 @@ export const products = [
       "/images/it-407-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Bharat Malhotra", rating: 4, comment: "Excellent Archi texture with detailed wood grain. Perfect for architectural projects." },
@@ -643,8 +643,8 @@ export const products = [
     id: 27,
     name: "Texture Archi Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/at-408-texture.webp",
     tags: ["texture", "Archi-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -661,10 +661,10 @@ export const products = [
       "/images/it-410-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Gaurav Joshi", rating: 4, comment: "Very good Archi texture series. The finish quality exceeds expectations." },
@@ -675,8 +675,8 @@ export const products = [
     id: 28,
     name: "Texture Archi Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/at-411-texture.webp",
     tags: ["texture", "Archi-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -693,10 +693,10 @@ export const products = [
       "/images/it-413-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Satish Kumar", rating: 5, comment: "Fantastic Archi texture quality! Perfect for our architectural studio design." },
@@ -707,8 +707,8 @@ export const products = [
     id: 29,
     name: "Texture Archi Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/at-414-texture.webp",
     tags: ["texture", "Archi-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -725,10 +725,10 @@ export const products = [
       "/images/it-416-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Ajay Verma", rating: 4, comment: "Excellent Archi texture with authentic wood appearance. Very satisfied!" },
@@ -739,8 +739,8 @@ export const products = [
     id: 30,
     name: "Texture Archi Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/at-418-texture.webp",
     tags: ["texture", "Archi-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -757,10 +757,10 @@ export const products = [
       "/images/it-420-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Rohit Saxena", rating: 3, comment: "Good Archi texture but grain could be more pronounced. Decent for the price." },
@@ -771,8 +771,8 @@ export const products = [
     id: 31,
     name: "Texture Archi Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/at-421-texture.webp",
     tags: ["texture", "Archi-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -789,10 +789,10 @@ export const products = [
       "/images/it-423-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Vikas Agarwal", rating: 5, comment: "Outstanding Archi texture quality! Perfect for high-end architectural projects." },
@@ -803,8 +803,8 @@ export const products = [
     id: 32,
     name: "Texture Archi Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/at-424-texture.webp",
     tags: ["texture", "Archi-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -821,10 +821,10 @@ export const products = [
       "/images/it-426-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Dinesh Malhotra", rating: 4, comment: "Very good Archi texture series. The wood grain pattern is well-defined." },
@@ -835,8 +835,8 @@ export const products = [
     id: 33,
     name: "Texture Archi Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/at-427-texture.webp",
     tags: ["texture", "Archi-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -853,10 +853,10 @@ export const products = [
       "/images/it-429-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Raman Singh", rating: 4, comment: "Good quality Archi texture with nice wood grain finish. Happy with purchase." },
@@ -867,8 +867,8 @@ export const products = [
     id: 34,
     name: "Texture Archi Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/at-430-texture.webp",
     tags: ["texture", "Archi-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -885,10 +885,10 @@ export const products = [
       "/images/it-432-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Mukesh Gupta", rating: 5, comment: "Excellent Archi texture quality! The finish is premium and long-lasting." },
@@ -899,8 +899,8 @@ export const products = [
     id: 35,
     name: "Texture Archi Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/at-433-texture.webp",
     tags: ["texture", "Archi-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -917,10 +917,10 @@ export const products = [
       "/images/it-435-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Subhash Yadav", rating: 4, comment: "Very good Archi texture with excellent grain detail. Recommended for interiors." },
@@ -931,8 +931,8 @@ export const products = [
     id: 36,
     name: "Texture Archi Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/at-436-texture.webp",
     tags: ["texture", "Archi-Interio"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -949,10 +949,10 @@ export const products = [
       "/images/it-437-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Rajesh Bansal", rating: 4, comment: "Good Archi texture series with nice finish quality. Value for money!" },
@@ -963,8 +963,8 @@ export const products = [
     id: 37,
     name: "Texture Pro+ Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/ah-601-texture.webp",
     tags: ["texture", "Pro+"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -981,10 +981,10 @@ export const products = [
       "/images/ah-603-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Alok Sharma", rating: 5, comment: "Outstanding Pro+ texture quality! The advanced finish is perfect for premium projects." },
@@ -995,8 +995,8 @@ export const products = [
     id: 38,
     name: "Texture Pro+ Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/ah-604-texture.webp",
     tags: ["texture", "Pro+"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -1013,10 +1013,10 @@ export const products = [
       "/images/ah-605-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Chandra Mohan", rating: 4, comment: "Very good Pro+ texture with enhanced durability. Great for professional use." },
@@ -1027,8 +1027,8 @@ export const products = [
     id: 39,
     name: "Texture Pro+ Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/ah-606-texture.webp",
     tags: ["texture", "Pro+"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -1045,10 +1045,10 @@ export const products = [
       "/images/ah-608-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Naveen Kumar", rating: 4, comment: "Excellent Pro+ texture series. The advanced finish technology is impressive." },
@@ -1059,8 +1059,8 @@ export const products = [
     id: 40,
     name: "Texture Pro+ Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/ah-609-texture.webp",
     tags: ["texture", "Pro+"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -1077,10 +1077,10 @@ export const products = [
       "/images/ah-611-texture.webp",
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Umesh Patel", rating: 5, comment: "Superb Pro+ texture quality! The finish is exceptionally smooth and durable." },
@@ -1091,8 +1091,8 @@ export const products = [
     id: 2,
     name: "Matt Rhino Sheets",
     category: "matt",
-    price: 38,
-    sqFeetPrice: "₹38/sq ft",
+    price: 450,
+    sqFeetPrice: "₹450 onwards",
     image: "/images/rm-701-matt.webp",
     tags: ["Matt", "Rhino"],
     description: "Premium matt finish sheets with subtle elegance and sophisticated appearance. Perfect for creating understated luxury in bedrooms, living rooms, and office spaces with anti-glare properties.",
@@ -1109,10 +1109,10 @@ export const products = [
       "/images/rm-703-matt.webp"
     ],
     pricing: [
-      { project: "Residential Floor", price: "₹35/sq ft" },
-      { project: "Outdoor Patio", price: "₹40/sq ft" },
-      { project: "Commercial Lobby", price: "₹42/sq ft" },
-      { project: "Restaurant Interior", price: "₹38/sq ft" }
+      { project: "Residential Floor", price: "₹430/sq ft" },
+      { project: "Outdoor Patio", price: "₹470/sq ft" },
+      { project: "Commercial Lobby", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹450/sq ft" }
     ],
     reviews: [
       { name: "Vikram Joshi", rating: 4, comment: "Love the matt finish! No glare and looks very sophisticated in our bedroom." },
@@ -1123,8 +1123,8 @@ export const products = [
     id: 41,
     name: "Matt Rhino Sheets",
     category: "matt",
-    price: 38,
-    sqFeetPrice: "₹38/sq ft",
+    price: 450,
+    sqFeetPrice: "₹450 onwards",
     image: "/images/rm-704-matt.webp",
     tags: ["Matt", "Rhino"],
     description: "Premium matt finish sheets with subtle elegance and sophisticated appearance. Perfect for creating understated luxury in bedrooms, living rooms, and office spaces with anti-glare properties.",
@@ -1141,10 +1141,10 @@ export const products = [
       "/images/rm-706-matt.webp"
     ],
     pricing: [
-      { project: "Residential Floor", price: "₹35/sq ft" },
-      { project: "Outdoor Patio", price: "₹40/sq ft" },
-      { project: "Commercial Lobby", price: "₹42/sq ft" },
-      { project: "Restaurant Interior", price: "₹38/sq ft" }
+      { project: "Residential Floor", price: "₹430/sq ft" },
+      { project: "Outdoor Patio", price: "₹470/sq ft" },
+      { project: "Commercial Lobby", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹450/sq ft" }
     ],
     reviews: [
       { name: "Sunil Agarwal", rating: 4, comment: "Great matt finish that doesn't show fingerprints. Perfect for high-traffic areas." },
@@ -1155,8 +1155,8 @@ export const products = [
     id: 42,
     name: "Texture Rhino Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/rm-801-texture.webp",
     tags: ["texture", "Rhino"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -1173,10 +1173,10 @@ export const products = [
       "/images/rm-803-texture.webp"
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Manoj Tiwari", rating: 5, comment: "Excellent Rhino texture! The wood grain looks incredibly realistic and durable." },
@@ -1187,8 +1187,8 @@ export const products = [
     id: 43,
     name: "Texture Rhino Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/rm-804-texture.webp",
     tags: ["texture", "Rhino"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -1205,10 +1205,10 @@ export const products = [
       "/images/rm-803-texture.webp"
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Deepak Singh", rating: 4, comment: "Very good Rhino texture with authentic wood appearance. Great for furniture!" },
@@ -1219,8 +1219,8 @@ export const products = [
     id: 45,
     name: "Texture Pro++ Rhino Sheets",
     category: "texture",
-    price: 45,
-    sqFeetPrice: "₹45/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/rh-901-texture.webp",
     tags: ["texture", "Rhino","Pro++"],
     description: "Superior textured sheets with natural wood grain patterns that bring warmth and character to any space. Ideal for creating rustic, traditional, or contemporary interiors with authentic appeal.",
@@ -1238,10 +1238,10 @@ export const products = [
       "/images/rh-904-texture.webp"
     ],
     pricing: [
-      { project: "Residential Bathroom", price: "₹42/sq ft" },
-      { project: "Commercial Space", price: "₹48/sq ft" },
-      { project: "Luxury Villa", price: "₹52/sq ft" },
-      { project: "Office Complex", price: "₹45/sq ft" }
+      { project: "Residential Bathroom", price: "₹480/sq ft" },
+      { project: "Commercial Space", price: "₹520/sq ft" },
+      { project: "Luxury Villa", price: "₹550/sq ft" },
+      { project: "Office Complex", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Ajit Kumar", rating: 5, comment: "Superb Pro++ Rhino texture! The advanced finish technology is remarkable." },
@@ -1254,8 +1254,8 @@ export const products = [
     id: 7,
     name: "Ceiling Panel",
     category: "ceiling",
-    price: 85,
-    sqFeetPrice: "₹85/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/cp-01.webp",
     tags: ["ceiling", "acoustic"],
     description: "Professional acoustic ceiling panels designed for superior sound absorption and noise reduction. Perfect for offices, conference rooms, auditoriums, and home theaters with excellent thermal insulation properties.",
@@ -1273,10 +1273,10 @@ export const products = [
       "/images/cp-04.webp"
     ],
     pricing: [
-      { project: "Office Ceiling", price: "₹82/sq ft" },
-      { project: "Restaurant Interior", price: "₹88/sq ft" },
-      { project: "Home Theater", price: "₹90/sq ft" },
-      { project: "Conference Room", price: "₹85/sq ft" }
+      { project: "Office Ceiling", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹520/sq ft" },
+      { project: "Home Theater", price: "₹550/sq ft" },
+      { project: "Conference Room", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Rajesh Kumar", rating: 5, comment: "Excellent acoustic properties! Our office is so much quieter now. Great investment!" },
@@ -1287,8 +1287,8 @@ export const products = [
     id: 46,
     name: "Ceiling Panel",
     category: "ceiling",
-    price: 85,
-    sqFeetPrice: "₹85/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/cp-02.webp",
     tags: ["ceiling", "acoustic"],
     description: "Professional acoustic ceiling panels designed for superior sound absorption and noise reduction. Perfect for offices, conference rooms, auditoriums, and home theaters with excellent thermal insulation properties.",
@@ -1306,10 +1306,10 @@ export const products = [
       "/images/cp-07.webp"
     ],
     pricing: [
-      { project: "Office Ceiling", price: "₹82/sq ft" },
-      { project: "Restaurant Interior", price: "₹88/sq ft" },
-      { project: "Home Theater", price: "₹90/sq ft" },
-      { project: "Conference Room", price: "₹85/sq ft" }
+      { project: "Office Ceiling", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹520/sq ft" },
+      { project: "Home Theater", price: "₹550/sq ft" },
+      { project: "Conference Room", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Arjun Malhotra", rating: 4, comment: "Good acoustic ceiling panels. Noticeable reduction in echo and noise levels." },
@@ -1320,8 +1320,8 @@ export const products = [
     id: 47,
     name: "2G-Ceiling Panel",
     category: "ceiling",
-    price: 85,
-    sqFeetPrice: "₹85/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/2g-01-texture.webp",
     tags: ["2g-ceiling", "acoustic"],
     description: "Professional acoustic ceiling panels designed for superior sound absorption and noise reduction. Perfect for offices, conference rooms, auditoriums, and home theaters with excellent thermal insulation properties.",
@@ -1338,10 +1338,10 @@ export const products = [
       "/images/2g-05-texture.webp"
     ],
     pricing: [
-      { project: "Office Ceiling", price: "₹82/sq ft" },
-      { project: "Restaurant Interior", price: "₹88/sq ft" },
-      { project: "Home Theater", price: "₹90/sq ft" },
-      { project: "Conference Room", price: "₹85/sq ft" }
+      { project: "Office Ceiling", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹520/sq ft" },
+      { project: "Home Theater", price: "₹550/sq ft" },
+      { project: "Conference Room", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Vinay Tiwari", rating: 5, comment: "Excellent 2G ceiling panels! Advanced technology with superior acoustic performance." },
@@ -1352,8 +1352,8 @@ export const products = [
     id: 48,
     name: "2G-Ceiling Panel",
     category: "ceiling",
-    price: 85,
-    sqFeetPrice: "₹85/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/2g-03-texture.webp",
     tags: ["2g-ceiling", "acoustic"],
     description: "Professional acoustic ceiling panels designed for superior sound absorption and noise reduction. Perfect for offices, conference rooms, auditoriums, and home theaters with excellent thermal insulation properties.",
@@ -1370,10 +1370,10 @@ export const products = [
       "/images/2g-07-texture.webp"
     ],
     pricing: [
-      { project: "Office Ceiling", price: "₹82/sq ft" },
-      { project: "Restaurant Interior", price: "₹88/sq ft" },
-      { project: "Home Theater", price: "₹90/sq ft" },
-      { project: "Conference Room", price: "₹85/sq ft" }
+      { project: "Office Ceiling", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹520/sq ft" },
+      { project: "Home Theater", price: "₹550/sq ft" },
+      { project: "Conference Room", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Sanjay Gupta", rating: 4, comment: "Good 2G ceiling technology. Effective sound dampening for our restaurant." },
@@ -1384,8 +1384,8 @@ export const products = [
     id: 49,
     name: "Ceiling Rafter Panel",
     category: "ceiling",
-    price: 85,
-    sqFeetPrice: "₹85/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/rft-01-glossy.webp",
     tags: ["Ceiling Rafter", "acoustic"],
     description: "Professional acoustic ceiling panels designed for superior sound absorption and noise reduction. Perfect for offices, conference rooms, auditoriums, and home theaters with excellent thermal insulation properties.",
@@ -1402,10 +1402,10 @@ export const products = [
       "/images/rft-03-glossy.webp"
     ],
     pricing: [
-      { project: "Office Ceiling", price: "₹82/sq ft" },
-      { project: "Restaurant Interior", price: "₹88/sq ft" },
-      { project: "Home Theater", price: "₹90/sq ft" },
-      { project: "Conference Room", price: "₹85/sq ft" }
+      { project: "Office Ceiling", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹520/sq ft" },
+      { project: "Home Theater", price: "₹550/sq ft" },
+      { project: "Conference Room", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Arun Sharma", rating: 5, comment: "Outstanding rafter ceiling panels! The architectural design is impressive." },
@@ -1416,8 +1416,8 @@ export const products = [
     id: 50,
     name: "Ceiling Rafter Panel",
     category: "ceiling",
-    price: 85,
-    sqFeetPrice: "₹85/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/rft-04-glossy.webp",
     tags: ["Ceiling Rafter", "acoustic"],
     description: "Professional acoustic ceiling panels designed for superior sound absorption and noise reduction. Perfect for offices, conference rooms, auditoriums, and home theaters with excellent thermal insulation properties.",
@@ -1434,10 +1434,10 @@ export const products = [
       "/images/rft-06-glossy.webp"
     ],
     pricing: [
-      { project: "Office Ceiling", price: "₹82/sq ft" },
-      { project: "Restaurant Interior", price: "₹88/sq ft" },
-      { project: "Home Theater", price: "₹90/sq ft" },
-      { project: "Conference Room", price: "₹85/sq ft" }
+      { project: "Office Ceiling", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹520/sq ft" },
+      { project: "Home Theater", price: "₹550/sq ft" },
+      { project: "Conference Room", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Mohit Joshi", rating: 4, comment: "Good rafter ceiling design with effective sound absorption. Looks premium!" },
@@ -1448,8 +1448,8 @@ export const products = [
     id: 51,
     name: "Ceiling Rafter Panel",
     category: "ceiling",
-    price: 85,
-    sqFeetPrice: "₹85/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/rft-07-glossy.webp",
     tags: ["Ceiling Rafter", "acoustic"],
     description: "Professional acoustic ceiling panels designed for superior sound absorption and noise reduction. Perfect for offices, conference rooms, auditoriums, and home theaters with excellent thermal insulation properties.",
@@ -1466,10 +1466,10 @@ export const products = [
       "/images/rft-09-glossy.webp"
     ],
     pricing: [
-      { project: "Office Ceiling", price: "₹82/sq ft" },
-      { project: "Restaurant Interior", price: "₹88/sq ft" },
-      { project: "Home Theater", price: "₹90/sq ft" },
-      { project: "Conference Room", price: "₹85/sq ft" }
+      { project: "Office Ceiling", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹520/sq ft" },
+      { project: "Home Theater", price: "₹550/sq ft" },
+      { project: "Conference Room", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Ravi Kumar", rating: 4, comment: "Very good rafter ceiling panels. The design is modern and functional." },
@@ -1480,8 +1480,8 @@ export const products = [
     id: 52,
     name: "Louvers Panel",
     category: "ceiling",
-    price: 85,
-    sqFeetPrice: "₹85/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/tl-01-texture.webp",
     tags: ["Louvers Panel", "acoustic"],
     description: "Professional acoustic ceiling panels designed for superior sound absorption and noise reduction. Perfect for offices, conference rooms, auditoriums, and home theaters with excellent thermal insulation properties.",
@@ -1498,10 +1498,10 @@ export const products = [
       "/images/tl-03-texture.webp"
     ],
     pricing: [
-      { project: "Office Ceiling", price: "₹82/sq ft" },
-      { project: "Restaurant Interior", price: "₹88/sq ft" },
-      { project: "Home Theater", price: "₹90/sq ft" },
-      { project: "Conference Room", price: "₹85/sq ft" }
+      { project: "Office Ceiling", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹520/sq ft" },
+      { project: "Home Theater", price: "₹550/sq ft" },
+      { project: "Conference Room", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Ashok Verma", rating: 5, comment: "Excellent louvers ceiling panels! Great airflow and acoustic combination." },
@@ -1512,8 +1512,8 @@ export const products = [
     id: 53,
     name: "Louvers Panel",
     category: "ceiling",
-    price: 85,
-    sqFeetPrice: "₹85/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/tl-04-texture.webp",
     tags: ["Louvers Panel", "acoustic"],
     description: "Professional acoustic ceiling panels designed for superior sound absorption and noise reduction. Perfect for offices, conference rooms, auditoriums, and home theaters with excellent thermal insulation properties.",
@@ -1530,10 +1530,10 @@ export const products = [
       "/images/tl-06-texture.webp"
     ],
     pricing: [
-      { project: "Office Ceiling", price: "₹82/sq ft" },
-      { project: "Restaurant Interior", price: "₹88/sq ft" },
-      { project: "Home Theater", price: "₹90/sq ft" },
-      { project: "Conference Room", price: "₹85/sq ft" }
+      { project: "Office Ceiling", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹520/sq ft" },
+      { project: "Home Theater", price: "₹550/sq ft" },
+      { project: "Conference Room", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Sudhir Agarwal", rating: 4, comment: "Good louvers ceiling system. Provides excellent air circulation and acoustics." },
@@ -1544,8 +1544,8 @@ export const products = [
     id: 54,
     name: "Louvers Panel",
     category: "ceiling",
-    price: 85,
-    sqFeetPrice: "₹85/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/tl-07-texture.webp",
     tags: ["Louvers Panel", "acoustic"],
     description: "Professional acoustic ceiling panels designed for superior sound absorption and noise reduction. Perfect for offices, conference rooms, auditoriums, and home theaters with excellent thermal insulation properties.",
@@ -1562,10 +1562,10 @@ export const products = [
       "/images/tl-09-texture.webp"
     ],
     pricing: [
-      { project: "Office Ceiling", price: "₹82/sq ft" },
-      { project: "Restaurant Interior", price: "₹88/sq ft" },
-      { project: "Home Theater", price: "₹90/sq ft" },
-      { project: "Conference Room", price: "₹85/sq ft" }
+      { project: "Office Ceiling", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹520/sq ft" },
+      { project: "Home Theater", price: "₹550/sq ft" },
+      { project: "Conference Room", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Prakash Singh", rating: 3, comment: "Average louvers panels. Expected better airflow for the price point." },
@@ -1576,8 +1576,8 @@ export const products = [
     id: 55,
     name: "Louvers Panel",
     category: "ceiling",
-    price: 85,
-    sqFeetPrice: "₹85/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/tl-10-texture.webp",
     tags: ["Louvers Panel", "acoustic"],
     description: "Professional acoustic ceiling panels designed for superior sound absorption and noise reduction. Perfect for offices, conference rooms, auditoriums, and home theaters with excellent thermal insulation properties.",
@@ -1594,10 +1594,10 @@ export const products = [
       "/images/tl-10-texture.webp"
     ],
     pricing: [
-      { project: "Office Ceiling", price: "₹82/sq ft" },
-      { project: "Restaurant Interior", price: "₹88/sq ft" },
-      { project: "Home Theater", price: "₹90/sq ft" },
-      { project: "Conference Room", price: "₹85/sq ft" }
+      { project: "Office Ceiling", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹520/sq ft" },
+      { project: "Home Theater", price: "₹550/sq ft" },
+      { project: "Conference Room", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Hemant Gupta", rating: 5, comment: "Excellent louvers ceiling! Perfect combination of style and functionality." },
@@ -1608,8 +1608,8 @@ export const products = [
     id: 56,
     name: "Louvers Panel",
     category: "ceiling",
-    price: 85,
-    sqFeetPrice: "₹85/sq ft",
+    price: 500,
+    sqFeetPrice: "₹500 onwards",
     image: "/images/tl-606-texture.webp",
     tags: ["Louvers Panel", "acoustic"],
     description: "Professional acoustic ceiling panels designed for superior sound absorption and noise reduction. Perfect for offices, conference rooms, auditoriums, and home theaters with excellent thermal insulation properties.",
@@ -1626,10 +1626,10 @@ export const products = [
       "/images/tl-608-texture.webp"
     ],
     pricing: [
-      { project: "Office Ceiling", price: "₹82/sq ft" },
-      { project: "Restaurant Interior", price: "₹88/sq ft" },
-      { project: "Home Theater", price: "₹90/sq ft" },
-      { project: "Conference Room", price: "₹85/sq ft" }
+      { project: "Office Ceiling", price: "₹480/sq ft" },
+      { project: "Restaurant Interior", price: "₹520/sq ft" },
+      { project: "Home Theater", price: "₹550/sq ft" },
+      { project: "Conference Room", price: "₹500/sq ft" }
     ],
     reviews: [
       { name: "Bijoy Das", rating: 4, comment: "Good quality louvers ceiling with modern design. Great for commercial spaces." },
@@ -1640,8 +1640,8 @@ export const products = [
     id: 57,
     name: "Doors - Treeplast Door",
     category: "doors",
-    price: 38,
-    sqFeetPrice: "₹38/sq ft",
+    price: 550,
+    sqFeetPrice: "₹550 onwards",
     image: "/images/td-01-texture.webp",
     tags: ["Texture", "Doors"],
     description: "High-quality WPC doors with superior durability and weather resistance. Perfect for interior and exterior applications with termite-proof construction and low maintenance requirements.",
@@ -1658,10 +1658,10 @@ export const products = [
       "/images/td-03-texture.webp"
     ],
     pricing: [
-      { project: "Residential Floor", price: "₹35/sq ft" },
-      { project: "Outdoor Patio", price: "₹40/sq ft" },
-      { project: "Commercial Lobby", price: "₹42/sq ft" },
-      { project: "Restaurant Interior", price: "₹38/sq ft" }
+      { project: "Residential Floor", price: "₹530/sq ft" },
+      { project: "Outdoor Patio", price: "₹570/sq ft" },
+      { project: "Commercial Lobby", price: "₹580/sq ft" },
+      { project: "Restaurant Interior", price: "₹550/sq ft" }
     ],
     reviews: [
       { name: "Anil Kumar", rating: 4, comment: "Great WPC doors! Very durable and the texture looks authentic. Good for bathrooms." },
@@ -1672,8 +1672,8 @@ export const products = [
     id: 58,
     name: "Doors - Treeplast Door",
     category: "doors",
-    price: 38,
-    sqFeetPrice: "₹38/sq ft",
+    price: 550,
+    sqFeetPrice: "₹550 onwards",
     image: "/images/td-04-texture.webp",
     tags: ["Texture", "Doors"],
     description: "High-quality WPC doors with superior durability and weather resistance. Perfect for interior and exterior applications with termite-proof construction and low maintenance requirements.",
@@ -1690,10 +1690,10 @@ export const products = [
       "/images/td-06-texture.webp"
     ],
     pricing: [
-      { project: "Residential Floor", price: "₹35/sq ft" },
-      { project: "Outdoor Patio", price: "₹40/sq ft" },
-      { project: "Commercial Lobby", price: "₹42/sq ft" },
-      { project: "Restaurant Interior", price: "₹38/sq ft" }
+      { project: "Residential Floor", price: "₹530/sq ft" },
+      { project: "Outdoor Patio", price: "₹570/sq ft" },
+      { project: "Commercial Lobby", price: "₹580/sq ft" },
+      { project: "Restaurant Interior", price: "₹550/sq ft" }
     ],
     reviews: [
       { name: "Ramesh Yadav", rating: 4, comment: "Very good WPC doors with excellent weather resistance. Great for outdoor use." },
@@ -1704,8 +1704,8 @@ export const products = [
     id: 59,
     name: "Doors - Treeplast Door",
     category: "doors",
-    price: 38,
-    sqFeetPrice: "₹38/sq ft",
+    price: 550,
+    sqFeetPrice: "₹550 onwards",
     image: "/images/td-07-texture.webp",
     tags: ["Texture", "Doors"],
     description: "High-quality WPC doors with superior durability and weather resistance. Perfect for interior and exterior applications with termite-proof construction and low maintenance requirements.",
@@ -1722,10 +1722,10 @@ export const products = [
       "/images/td-09-texture.webp"
     ],
     pricing: [
-      { project: "Residential Floor", price: "₹35/sq ft" },
-      { project: "Outdoor Patio", price: "₹40/sq ft" },
-      { project: "Commercial Lobby", price: "₹42/sq ft" },
-      { project: "Restaurant Interior", price: "₹38/sq ft" }
+      { project: "Residential Floor", price: "₹530/sq ft" },
+      { project: "Outdoor Patio", price: "₹570/sq ft" },
+      { project: "Commercial Lobby", price: "₹580/sq ft" },
+      { project: "Restaurant Interior", price: "₹550/sq ft" }
     ],
     reviews: [
       { name: "Sushil Gupta", rating: 5, comment: "Outstanding WPC doors! The texture is beautiful and very resistant to moisture." },
@@ -1733,6 +1733,9 @@ export const products = [
     ]
   },
 ];
+
+// Weight variation note
+export const priceNote = "*Note: Sheet prices may vary based on weight specifications (6kg, 8kg, 10kg per sheet). Contact us for detailed pricing based on your specific requirements.";
 
 export const getProductById = (id) => {
   return products.find(product => product.id === parseInt(id));
