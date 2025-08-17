@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { products, getProductsByCategory } from '@/data/products';
+import { products, getProductsByCategory, priceNote } from '@/data/products';
 import FloatingActions from '@/components/FloatingActions';
 import SEO from '@/components/SEO';
 
