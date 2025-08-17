@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Menu, X, Phone, Mail, Home, Package, Camera, User, MessageCircle } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,19 +40,19 @@ const Navbar = () => {
       <nav className="navbar-professional sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            {/* Logo */}
+            {/* Logo - Always visible */}
             <Link to="/" className="flex items-center space-x-3">
-              <div className="w-16 h-16 flex items-center justify-center">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe069f4e12ad141ca8286e47c21c4220d%2F816acb718bc944088a8df0fcd7ba492d?format=webp&width=200"
                   alt="Shubh Aangan Logo"
-                  className="w-16 h-16 object-contain drop-shadow-lg"
+                  className="w-12 h-12 lg:w-16 lg:h-16 object-contain drop-shadow-lg"
                   loading="lazy"
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-bold heading-primary">शुभ आंगन</span>
-                <span className="text-xs text-small" style={{ color: 'hsl(var(--wpc-warm))' }}>हर कोने में बसाए नई कहानी</span>
+                <span className="text-lg lg:text-2xl font-bold heading-primary">शुभ आंगन</span>
+                <span className="text-[10px] lg:text-xs text-small" style={{ color: 'hsl(var(--wpc-warm))' }}>हर कोने में बसाए नई कहानी</span>
               </div>
             </Link>
 
@@ -139,7 +139,7 @@ const Navbar = () => {
                     {item.name}
                   </Link>
                 ))}
-                
+
                 <Link to="/contact" onClick={() => setIsOpen(false)}>
                   <button className="w-full wpc-btn-primary px-6 py-3 rounded-lg font-semibold shadow-lg mt-4">
                     Get Quote

@@ -32,7 +32,7 @@ const FeaturedProducts = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="space-y-4 lg:grid lg:grid-cols-3 lg:gap-6 lg:space-y-0 mb-12">
           {featuredProducts.map((product, index) => (
             <motion.div
               key={product.id}
@@ -40,12 +40,44 @@ const FeaturedProducts = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <Card className="card-premium overflow-hidden">
+              {/* Mobile Layout (horizontal card) */}
+              <Card className="card-premium overflow-hidden lg:hidden">
+                <div className="flex min-h-[110px]">
+                  <div className="relative w-32 h-28 flex-shrink-0">
+                    <img
+                      className="w-full h-full object-cover optimized-image"
+                      alt={product.name}
+                      src={product.image}
+                      loading="lazy"
+                    />
+                    <div className="absolute top-1 left-1">
+                      <span className="product-tag px-1 py-0.5 rounded text-[8px] font-semibold">
+                        {product.tags[0]}
+                      </span>
+                    </div>
+                  </div>
+                  <CardContent className="flex-1 p-3 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-sm font-semibold mb-1 heading-tertiary line-clamp-1">{product.name}</h3>
+                      <p className="text-xs text-body mb-2">Color: <span className="font-medium" style={{ color: 'hsl(var(--wpc-warm))' }}>{product.color}</span></p>
+                      <p className="text-lg font-bold mb-2" style={{ color: 'hsl(var(--wpc-warm))' }}>{product.sqFeetPrice}</p>
+                    </div>
+                    <Link to={`/product/${product.id}`}>
+                      <Button className="w-full wpc-btn-primary text-xs py-1">
+                        View Details
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </div>
+              </Card>
+
+              {/* Desktop Layout (vertical card) */}
+              <Card className="card-premium overflow-hidden hidden lg:block">
                 <div className="relative">
-                  <img 
+                  <img
                     className="w-full h-64 object-cover optimized-image"
                     alt={product.name}
-                    src="https://images.unsplash.com/photo-1635865165118-917ed9e20936"
+                    src={product.image}
                     loading="lazy"
                   />
                   <div className="absolute top-4 left-4">

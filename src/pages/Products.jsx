@@ -168,13 +168,13 @@ const Products = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
             {/* Category Filters */}
-            <div className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-2 gap-2 md:flex md:flex-wrap md:gap-2">
               {categories.map((category) => (
                 <Button
                   key={category.id}
                   onClick={() => handleCategoryChange(category.id)}
                   variant={selectedCategory === category.id ? "default" : "outline"}
-                  className={`px-4 py-2 transition-all duration-200 ${
+                  className={`px-3 py-2 text-xs md:text-sm md:px-4 transition-all duration-200 ${
                     selectedCategory === category.id
                       ? 'wpc-btn-primary text-white'
                       : 'border-2'
@@ -185,7 +185,7 @@ const Products = () => {
                     backgroundColor: 'transparent'
                   } : {}}
                 >
-                  {category.name} <span className="ml-1 text-xs opacity-70">({category.count})</span>
+                  {category.name} <span className="ml-1 text-[10px] md:text-xs opacity-70">({category.count})</span>
                 </Button>
               ))}
             </div>
@@ -290,7 +290,7 @@ const Products = () => {
 
           {/* Products Display */}
           {viewMode === 'grid' ? (
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+          <div className="space-y-3 md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-6 md:space-y-0">
             {filteredProducts.map((product, index) => (
               <motion.div
                 key={product.id}
@@ -298,18 +298,68 @@ const Products = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card className="card-hover overflow-hidden group h-full flex flex-col">
-                  {/* Product Image */}
+                {/* Mobile Layout (horizontal card) */}
+                <Card className="card-hover overflow-hidden group md:hidden">
+                  <div className="flex min-h-[100px]">
+                    <div className="relative w-28 h-24 flex-shrink-0">
+                      <img
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        alt={product.name}
+                        src={product.image}
+                        loading="lazy"
+                      />
+                      <div className="absolute top-1 left-1">
+                        <span className="bg-white/90 text-gray-800 text-[8px] font-semibold px-1 py-0.5 rounded">
+                          {product.category}
+                        </span>
+                      </div>
+                    </div>
+
+                    <CardContent className="flex-1 p-3 flex flex-col justify-between">
+                      <div>
+                        <h3 className="text-sm font-semibold mb-1 heading-tertiary transition-colors group-hover:text-wpc-warm line-clamp-1">
+                          {product.name}
+                        </h3>
+
+                        <div className="flex items-center mb-1">
+                          <div className="flex mr-1">
+                            {renderStars(getAverageRating(product.reviews))}
+                          </div>
+                          <span className="text-[10px] text-gray-500">
+                            ({product.reviews?.length || 0})
+                          </span>
+                        </div>
+
+                        <p className="text-xs text-body mb-2">
+                          Color: <span className="font-medium">{product.color}</span>
+                        </p>
+                      </div>
+
+                      <div className="flex items-center justify-between">
+                        <div className="text-base font-bold" style={{ color: 'hsl(var(--wpc-warm))' }}>
+                          {product.sqFeetPrice}
+                        </div>
+                        <Link to={`/product/${product.id}`}>
+                          <Button className="wpc-btn-primary text-xs px-3 py-1">
+                            View
+                          </Button>
+                        </Link>
+                      </div>
+                    </CardContent>
+                  </div>
+                </Card>
+
+                {/* Desktop Layout (vertical card) */}
+                <Card className="card-hover overflow-hidden group h-full flex-col hidden md:flex">
                   <div className="relative">
                     <img
-                      className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                      className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                       alt={product.name}
                       src={product.image}
                       loading="lazy"
                     />
 
-                    {/* Tags - hide on mobile, show on desktop */}
-                    <div className="hidden md:flex absolute top-3 left-3 flex-wrap gap-1">
+                    <div className="absolute top-3 left-3 flex-wrap gap-1">
                       {product.tags.slice(0, 2).map((tag) => (
                         <span
                           key={tag}
@@ -320,54 +370,45 @@ const Products = () => {
                       ))}
                     </div>
 
-
-                    {/* Category Badge */}
-                    <div className="absolute top-2 left-2 md:right-2 md:left-auto">
-                      <span className="bg-white/90 text-gray-800 text-[10px] font-semibold px-1.5 py-0.5 rounded-full">
+                    <div className="absolute top-2 right-2">
+                      <span className="bg-white/90 text-gray-800 text-xs font-semibold px-2 py-1 rounded-full">
                         {product.category}
                       </span>
                     </div>
                   </div>
 
-                  {/* Product Content */}
-                  <CardContent className="p-3 md:p-4 flex flex-col flex-grow">
-                    {/* Name */}
-                    <h3 className="text-xs md:text-lg font-semibold mb-1 heading-tertiary transition-colors group-hover:text-wpc-warm line-clamp-2">
+                  <CardContent className="p-4 flex flex-col flex-grow">
+                    <h3 className="text-lg font-semibold mb-1 heading-tertiary transition-colors group-hover:text-wpc-warm line-clamp-2">
                       {product.name}
                     </h3>
 
-                    {/* Rating */}
                     <div className="flex items-center mb-1">
                       <div className="flex mr-1">
                         {renderStars(getAverageRating(product.reviews))}
                       </div>
-                      <span className="hidden md:inline text-[10px] md:text-sm text-gray-500">
+                      <span className="text-sm text-gray-500">
                         ({product.reviews?.length || 0} reviews)
                       </span>
                     </div>
 
-                    {/* Color */}
-                    <p className="text-body mb-1 text-[11px] md:text-sm">
+                    <p className="text-body mb-1 text-sm">
                       Color: <span className="font-medium">{product.color}</span>
                     </p>
 
-                    {/* Price */}
                     <div className="flex items-center justify-between mb-2">
-                      <div className="text-sm md:text-2xl font-bold" style={{ color: 'hsl(var(--wpc-warm))' }}>
+                      <div className="text-2xl font-bold" style={{ color: 'hsl(var(--wpc-warm))' }}>
                         {product.sqFeetPrice}
                       </div>
-                      <div className="hidden md:block text-[10px] md:text-sm text-gray-500">per sq ft</div>
+                      <div className="text-sm text-gray-500">per sq ft</div>
                     </div>
 
-                    {/* Description */}
-                    <p className="text-body text-[11px] md:text-sm mb-2 line-clamp-2 min-h-[32px]">
+                    <p className="text-body text-sm mb-2 line-clamp-2 min-h-[40px]">
                       {product.description}
                     </p>
 
-                    {/* View Button at Bottom */}
                     <div className="mt-auto">
                       <Link to={`/product/${product.id}`} className="block">
-                        <Button className="w-full wpc-btn-primary text-[11px] md:text-sm py-1">
+                        <Button className="w-full wpc-btn-primary text-sm py-2">
                           View Details
                         </Button>
                       </Link>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   ChefHat, 
@@ -27,7 +26,6 @@ import SEO from '@/components/SEO';
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const navigate = useNavigate();
 
   const galleryCategories = [
     {
@@ -362,7 +360,7 @@ const Gallery = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-onClick={() => navigate(`/gallery/${category.id}`)}
+                onClick={() => setSelectedCategory(category.id)}
                 className="cursor-pointer group"
               >
                 <Card className="card-hover overflow-hidden shadow-xl border border-gray-100">

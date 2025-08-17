@@ -27,18 +27,18 @@ const About = () => {
   const team = [{
     name: "ShubhAangan",
     role: "Founder & CEO",
-    image: "Professional portrait of John Smith, founder of Shubhaangan",
-    description: "With over 20 years in the tile industry, John founded Shubhaangan with a vision to transform spaces through quality craftsmanship."
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    description: "With over 7 years in the WPC industry, our founder started ShubhAangan with a vision to transform spaces through quality craftsmanship."
   }, {
     name: "ShubhAangan",
     role: "Design Director",
-    image: "Professional portrait of Sarah Johnson, design director",
-    description: "Sarah brings creative vision and technical expertise to every project, ensuring beautiful and functional results."
+    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+    description: "Our design director brings creative vision and technical expertise to every project, ensuring beautiful and functional results."
   }, {
     name: "ShubhAangan",
     role: "Operations Manager",
-    image: "Professional portrait of Mike Chen, operations manager",
-    description: "Mike ensures smooth operations and timely delivery, maintaining our reputation for reliability and excellence."
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    description: "Our operations manager ensures smooth operations and timely delivery, maintaining our reputation for reliability and excellence."
   }];
   return <>
   <FloatingActions />
@@ -138,7 +138,7 @@ const About = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {values.map((value, index) => <motion.div key={index} initial={{
             opacity: 0,
             y: 30
@@ -193,7 +193,7 @@ const About = () => {
             delay: index * 0.2
           }}>
                 <Card className="card-hover bg-white shadow-lg text-center overflow-hidden">
-                  <img className="w-full h-64 object-cover" alt={member.name} src="https://images.unsplash.com/photo-1644424235476-295f24d503d9" />
+                  <img className="w-full h-64 object-cover" alt={member.role} src={member.image} />
                   <CardContent className="p-6">
                     <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
                     <p className="text-amber-700 font-medium mb-4">{member.role}</p>

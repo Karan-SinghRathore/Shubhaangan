@@ -14,11 +14,11 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import FloatingActions from '@/components/FloatingActions';
 import FAQ from '@/components/FAQ';
-import MapComponent from '@/pages/MapComponent.jsx';
 
 const Contact = () => {
   const form = useRef();
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -35,31 +35,36 @@ const Contact = () => {
     }));
   };
 
- const handleSubmit = (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  // Basic validation
-  if (!formData.name || !formData.email || !formData.message) {
-    toast({
-      title: "Missing Information",
-      description: "Please fill in all required fields.",
-      variant: "destructive"
-    });
-    return;
-  }
-
-  emailjs.sendForm(
-    'service_4er6gcq',       
-    'template_ivzi3sq',      
-    form.current,            
-    'SNzjpropWipwnwXwk'        
-  ).then(
-    (result) => {
-      console.log(result.text);
+    // Basic validation
+    if (!formData.name || !formData.email || !formData.message) {
       toast({
-        title: "Message Sent!",
+        title: "Missing Information",
+        description: "Please fill in all required fields.",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const result = await emailjs.sendForm(
+        'service_4er6gcq',
+        'template_ivzi3sq',
+        form.current,
+        'SNzjpropWipwnwXwk'
+      );
+
+      console.log('EmailJS Result:', result.text);
+
+      toast({
+        title: "Message Sent Successfully!",
         description: "Thank you for contacting us. We'll get back to you within 24 hours.",
       });
+
       // Reset form after success
       setFormData({
         name: '',
@@ -68,17 +73,20 @@ const Contact = () => {
         subject: '',
         message: ''
       });
-    },
-    (error) => {
-      console.error(error.text);
+
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+
+      // Fallback to showing phone number if email fails
       toast({
-        title: "Error",
-        description: "Something went wrong while sending your message.",
+        title: "Message Submission Error",
+        description: "There was an issue sending your message. Please call us directly at +91 81144 68410 or email shubhaanganhd@gmail.com",
         variant: "destructive"
       });
+    } finally {
+      setIsSubmitting(false);
     }
-  );
-};
+  };
 
   const contactInfo = [
     {
@@ -144,7 +152,7 @@ const Contact = () => {
       {/* Contact Information */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {contactInfo.map((info, index) => (
               <motion.div
                 key={index}
@@ -158,7 +166,23 @@ const Contact = () => {
                       {info.icon}
                     </div>
                     <h3 className="text-lg font-semibold mb-2">{info.title}</h3>
-                    <p className="text-emerald-700 font-medium mb-2">{info.details}</p>
+                    {info.title === "Email Us" ? (
+                      <a
+                        href={`mailto:${info.details}`}
+                        className="text-emerald-700 font-medium mb-2 hover:text-emerald-800 transition-colors duration-200 block"
+                      >
+                        {info.details}
+                      </a>
+                    ) : info.title === "Call Us" ? (
+                      <a
+                        href={`tel:${info.details.replace(/\s/g, '')}`}
+                        className="text-emerald-700 font-medium mb-2 hover:text-emerald-800 transition-colors duration-200 block"
+                      >
+                        {info.details}
+                      </a>
+                    ) : (
+                      <p className="text-emerald-700 font-medium mb-2">{info.details}</p>
+                    )}
                     <p className="text-gray-600 text-sm">{info.description}</p>
                   </CardContent>
                 </Card>
@@ -247,13 +271,23 @@ const Contact = () => {
                       />
                     </div>
 
-                    <Button 
-                      type="submit" 
-                      size="lg" 
+                    <Button
+                      type="submit"
+                      size="lg"
                       className="w-full wpc-btn-primary text-white"
+                      disabled={isSubmitting}
                     >
-                      <Send className="mr-2" size={20} />
-                      Send Message
+                      {isSubmitting ? (
+                        <>
+                          <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                          Sending...
+                        </>
+                      ) : (
+                        <>
+                          <Send className="mr-2" size={20} />
+                          Send Message
+                        </>
+                      )}
                     </Button>
                   </form>
                 </CardContent>
@@ -271,28 +305,24 @@ const Contact = () => {
               <Card className="shadow-lg overflow-hidden">
                 <div className="relative">
                   {/* Embedded Google Map */}
-                  <div className="h-64 relative">
-                    <MapComponent />
-
-                    {/* Map Overlay with Business Info */}
-                     <div className="absolute bottom-4 left-4 right-4">
-                      <div className="bg-white/95 backdrop-blur-sm rounded-lg p-3 shadow-lg">
-                        <div className="flex items-center justify-between">
-                          <div>
-                            <p className="font-semibold text-sm" style={{ color: 'hsl(var(--wpc-text-primary))' }}>ShubhAangan WPC Showroom</p>
-                            <p className="text-xs text-gray-600">Open 24×7</p>
-                          </div>
-                          <a
-                            href="https://maps.app.goo.gl/JARb6uRcUj4hTenQ9"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="wpc-btn-primary px-3 py-1 text-xs rounded"
-                          >
-                            Get Directions
-                          </a>
+                  <div className="h-64 relative bg-gray-200 rounded-lg overflow-hidden">
+                    <div className="w-full h-full bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="w-16 h-16 mx-auto mb-3 bg-amber-600 rounded-full flex items-center justify-center">
+                          <MapPin className="text-white" size={24} />
                         </div>
+                        <p className="font-semibold text-amber-800 mb-2">ShubhAangan WPC Showroom</p>
+                        <p className="text-sm text-amber-700 mb-3">JagatPura, Jaipur • Open 24×7</p>
+                        <a
+                          href="https://maps.app.goo.gl/Yqn9E3drHdUd1JD6A"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block bg-amber-600 text-white px-4 py-2 rounded-lg hover:bg-amber-700 transition-colors text-sm"
+                        >
+                          View on Google Maps
+                        </a>
                       </div>
-                    </div> 
+                    </div>
                   </div>
                 </div>
               </Card>
