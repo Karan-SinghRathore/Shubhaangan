@@ -23,7 +23,7 @@ const Products = () => {
   const categories = [
     { id: 'all', name: 'All Products', count: products.length },
     { id: 'glossy', name: 'Glossy', count: products.filter(p => p.category === 'glossy').length },
-    { id: 'Matt', name: 'Matt', count: products.filter(p => p.category === 'Matt').length },
+    { id: 'matt', name: 'Matt', count: products.filter(p => p.category === 'matt').length },
     { id: 'texture', name: 'Texture', count: products.filter(p => p.category === 'texture').length },
     { id: 'ceiling', name: 'Ceiling', count: products.filter(p => p.category === 'ceiling').length },
     { id: 'doors', name: 'doors', count: products.filter(p => p.category === 'doors').length }
