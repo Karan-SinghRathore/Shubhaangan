@@ -82,7 +82,6 @@ const Gallery = () => {
       icon: <Square size={32} />,
       description: 'Designer wall panels for modern interior aesthetics',
       shortDesc: 'Decorative wall solutions',
-      priceRange: '₹200 - ₹450 /sq ft',
       projectTime: '3-5 days',
       warranty: '7 years',
       popularFeatures: ['3D Textures', 'Easy Install', 'Paintable Surface', 'Custom Patterns'],
@@ -96,10 +95,8 @@ const Gallery = () => {
       gallery: [
         'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
         'https://images.unsplash.com/photo-1571055107559-3e67626fa8be',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1571055107559-3e67626fa8be',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1571055107559-3e67626fa8be'
+        'https://images.unsplash.com/photo-1596178065887-1198b6148b2b',
+        'https://images.unsplash.com/photo-1560185893-a55cbc8c57e8'
       ]
     },
     {
@@ -108,7 +105,6 @@ const Gallery = () => {
       icon: <Shirt size={32} />,
       description: 'Spacious WPC wardrobes with modern storage solutions',
       shortDesc: 'Custom storage solutions',
-      priceRange: '₹800 - ₹1,800 /sq ft',
       projectTime: '8-12 days',
       warranty: '10 years',
       popularFeatures: ['Sliding Doors', 'Interior Organizers', 'Mirror Integration', 'Soft Close'],
@@ -122,10 +118,8 @@ const Gallery = () => {
       gallery: [
         'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
         'https://images.unsplash.com/photo-1581539250439-c96689b516dd',
-        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
-        'https://images.unsplash.com/photo-1581539250439-c96689b516dd',
-        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
-        'https://images.unsplash.com/photo-1581539250439-c96689b516dd'
+        'https://images.unsplash.com/photo-1549497538-303791108f95',
+        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7'
       ]
     },
     {
