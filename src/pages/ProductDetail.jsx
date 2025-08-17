@@ -254,6 +254,7 @@ const ProductDetail = () => {
             className="text-center mt-8"
           >
             <p className="text-body mb-4">Prices include material and basic installation. Additional charges may apply for complex designs.</p>
+            <p className="text-sm text-gray-600 mb-4 italic">{priceNote}</p>
             <Link to="/contact">
               <Button className="wpc-btn-primary">
                 Get Detailed Quote
