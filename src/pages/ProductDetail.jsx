@@ -7,7 +7,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { getProductById, products } from '@/data/products';
+import { getProductById, products, priceNote } from '@/data/products';
 import FloatingActions from '@/components/FloatingActions';
 
 const ProductDetail = () => {
@@ -254,6 +254,7 @@ const ProductDetail = () => {
             className="text-center mt-8"
           >
             <p className="text-body mb-4">Prices include material and basic installation. Additional charges may apply for complex designs.</p>
+            <p className="text-sm text-gray-600 mb-4 italic">{priceNote}</p>
             <Link to="/contact">
               <Button className="wpc-btn-primary">
                 Get Detailed Quote

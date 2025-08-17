@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { 
-  ChefHat, 
-  Home, 
-  Square, 
-  Shirt, 
-  Tv, 
-  Phone, 
-  Mail, 
+import {
+  ChefHat,
+  Home,
+  Square,
+  Shirt,
+  Tv,
+  Phone,
+  Mail,
   ArrowRight,
   ArrowLeft,
   CheckCircle,
@@ -25,7 +25,8 @@ import {
   TrendingUp,
   Heart,
   Camera,
-  Download
+  Download,
+  Wind
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -125,6 +126,46 @@ const GalleryCategory = () => {
       testimonials: [
         { name: 'Amit Verma', rating: 5, comment: 'Excellent acoustic properties. Our home theater sounds amazing now.', project: 'Home Theater Ceiling' },
         { name: 'Sneha Reddy', rating: 4, comment: 'Beautiful design and quick installation. Very satisfied.', project: 'Living Room Ceiling' }
+      ]
+    },
+    aluminium: {
+      id: 'aluminium',
+      name: 'Aluminium Windows & Doors',
+      icon: <Wind size={40} />,
+      description: 'Premium aluminium windows and doors for modern spaces',
+      longDescription: 'Our premium aluminium windows and doors combine superior durability with energy efficiency and modern aesthetics. Perfect for residential and commercial applications with excellent weather resistance, thermal insulation, and sleek contemporary designs.',
+      projectTime: '7-10 days',
+      warranty: '15 years',
+      rating: 4.9,
+      completedProjects: 800,
+      image: 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d',
+      characteristics: [
+        { icon: <Shield size={24} />, title: 'Corrosion Resistant', desc: 'Advanced anodized coating prevents rust and corrosion' },
+        { icon: <Droplets size={24} />, title: 'Weather Sealed', desc: 'Superior weatherproofing against rain and wind' },
+        { icon: <Zap size={24} />, title: 'Energy Efficient', desc: 'Thermal break technology for better insulation' },
+        { icon: <Sparkles size={24} />, title: 'Sleek Design', desc: 'Modern, minimalist aesthetic appeal' }
+      ],
+      features: [
+        'Thermal Break Technology', 'Multi-Point Locking', 'Powder Coated Finish',
+        'Double Glazing Ready', 'Mosquito Mesh Compatible', 'Customizable Colors',
+        'Low Maintenance', 'Sound Insulation', 'UV Protection', 'Easy Operation',
+        'Security Features', 'Modern Hardware'
+      ],
+      gallery: [
+        'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d',
+        'https://images.unsplash.com/photo-1560472354-b33ff0c44a43',
+        'https://images.unsplash.com/photo-1554995207-c18c203602cb',
+        'https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5'
+      ],
+      process: [
+        { step: 1, title: 'Site Survey', desc: 'Accurate measurement and assessment of openings' },
+        { step: 2, title: 'Design & Selection', desc: 'Choose frame profiles, glass, and hardware options' },
+        { step: 3, title: 'Manufacturing', desc: 'Precision fabrication in our modern facility' },
+        { step: 4, title: 'Installation', desc: 'Professional fitting by certified technicians' }
+      ],
+      testimonials: [
+        { name: 'Arjun Malhotra', rating: 5, comment: 'Excellent quality aluminium windows! Perfect fit and finish. Very satisfied with the energy efficiency.', project: 'Villa Window Installation' },
+        { name: 'Kiran Reddy', rating: 5, comment: 'Outstanding service and product quality. The windows look amazing and operate smoothly.', project: 'Commercial Office Windows' }
       ]
     },
     // Add similar detailed data for other categories...

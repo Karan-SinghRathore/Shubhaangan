@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { products, getProductsByCategory } from '@/data/products';
+import { products, getProductsByCategory, priceNote } from '@/data/products';
 import FloatingActions from '@/components/FloatingActions';
 import SEO from '@/components/SEO';
 
@@ -23,7 +23,7 @@ const Products = () => {
   const categories = [
     { id: 'all', name: 'All Products', count: products.length },
     { id: 'glossy', name: 'Glossy', count: products.filter(p => p.category === 'glossy').length },
-    { id: 'Matt', name: 'Matt', count: products.filter(p => p.category === 'Matt').length },
+    { id: 'matt', name: 'Matt', count: products.filter(p => p.category === 'matt').length },
     { id: 'texture', name: 'Texture', count: products.filter(p => p.category === 'texture').length },
     { id: 'ceiling', name: 'Ceiling', count: products.filter(p => p.category === 'ceiling').length },
     { id: 'doors', name: 'doors', count: products.filter(p => p.category === 'doors').length }
@@ -287,6 +287,7 @@ const Products = () => {
               Showing {filteredProducts.length} of {products.length} products
               {searchTerm && ` for "${searchTerm}"`}
             </p>
+            <p className="text-sm text-gray-500 mt-2 italic">{priceNote}</p>
           </div>
 
           {/* Products Display */}

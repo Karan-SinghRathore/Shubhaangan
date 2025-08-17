@@ -2,21 +2,22 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { 
-  ChefHat, 
-  Home, 
-  Square, 
-  Shirt, 
-  Tv, 
-  Phone, 
-  Mail, 
+import {
+  ChefHat,
+  Home,
+  Square,
+  Shirt,
+  Tv,
+  Phone,
+  Mail,
   ArrowRight,
   CheckCircle,
   Droplets,
   Shield,
   Recycle,
   Sparkles,
-  Zap
+  Zap,
+  Wind
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -36,7 +37,6 @@ const Gallery = () => {
       icon: <ChefHat size={32} />,
       description: 'Modern modular kitchen solutions with premium WPC materials',
       shortDesc: 'Waterproof modular kitchens',
-      priceRange: '₹1,200 - ₹2,500 /sq ft',
       projectTime: '10-15 days',
       warranty: '10 years',
       popularFeatures: ['Soft-Close Hinges', 'Pull-Out Drawers', 'Anti-Scratch Surface', 'Modular Design'],
@@ -50,9 +50,7 @@ const Gallery = () => {
       gallery: [
         'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
         'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136',
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136',
+        'https://images.unsplash.com/photo-1596178065887-1198b6148b2b',
         'https://images.unsplash.com/photo-1586023492125-27b2c045efd7'
       ]
     },
@@ -62,7 +60,6 @@ const Gallery = () => {
       icon: <Home size={32} />,
       description: 'Elegant false ceiling designs with acoustic properties',
       shortDesc: 'Acoustic & designer ceilings',
-      priceRange: '₹85 - ₹150 /sq ft',
       projectTime: '5-8 days',
       warranty: '5 years',
       popularFeatures: ['LED Integration', 'Sound Absorption', 'Fire Resistant', 'Easy Access'],
@@ -76,10 +73,8 @@ const Gallery = () => {
       gallery: [
         'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6',
         'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2',
-        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6',
-        'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2',
-        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6',
-        'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2'
+        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
+        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6'
       ]
     },
     {
@@ -88,7 +83,6 @@ const Gallery = () => {
       icon: <Square size={32} />,
       description: 'Designer wall panels for modern interior aesthetics',
       shortDesc: 'Decorative wall solutions',
-      priceRange: '₹200 - ₹450 /sq ft',
       projectTime: '3-5 days',
       warranty: '7 years',
       popularFeatures: ['3D Textures', 'Easy Install', 'Paintable Surface', 'Custom Patterns'],
@@ -102,10 +96,8 @@ const Gallery = () => {
       gallery: [
         'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
         'https://images.unsplash.com/photo-1571055107559-3e67626fa8be',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1571055107559-3e67626fa8be',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1571055107559-3e67626fa8be'
+        'https://images.unsplash.com/photo-1596178065887-1198b6148b2b',
+        'https://images.unsplash.com/photo-1560185893-a55cbc8c57e8'
       ]
     },
     {
@@ -114,7 +106,6 @@ const Gallery = () => {
       icon: <Shirt size={32} />,
       description: 'Spacious WPC wardrobes with modern storage solutions',
       shortDesc: 'Custom storage solutions',
-      priceRange: '₹800 - ₹1,800 /sq ft',
       projectTime: '8-12 days',
       warranty: '10 years',
       popularFeatures: ['Sliding Doors', 'Interior Organizers', 'Mirror Integration', 'Soft Close'],
@@ -128,10 +119,8 @@ const Gallery = () => {
       gallery: [
         'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
         'https://images.unsplash.com/photo-1581539250439-c96689b516dd',
-        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
-        'https://images.unsplash.com/photo-1581539250439-c96689b516dd',
-        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
-        'https://images.unsplash.com/photo-1581539250439-c96689b516dd'
+        'https://images.unsplash.com/photo-1549497538-303791108f95',
+        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7'
       ]
     },
     {
@@ -140,7 +129,6 @@ const Gallery = () => {
       icon: <Tv size={32} />,
       description: 'Modern TV cabinets with integrated storage and style',
       shortDesc: 'Entertainment center solutions',
-      priceRange: '₹600 - ₹1,200 /sq ft',
       projectTime: '4-7 days',
       warranty: '8 years',
       popularFeatures: ['Cable Management', 'LED Strips', 'Hidden Storage', 'Wall Mount Ready'],
@@ -154,10 +142,31 @@ const Gallery = () => {
       gallery: [
         'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
         'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e'
+        'https://images.unsplash.com/photo-1560185007-cde436f6a4d0',
+        'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c'
+      ]
+    },
+    {
+      id: 'aluminium',
+      name: 'Aluminium Windows & Doors',
+      icon: <Wind size={32} />,
+      description: 'Premium aluminium windows and doors with superior durability, energy efficiency, and modern aesthetics. Perfect for residential and commercial applications with excellent weather resistance.',
+      shortDesc: 'Premium aluminium solutions',
+      projectTime: '7-10 days',
+      warranty: '15 years',
+      popularFeatures: ['Weather Resistant', 'Energy Efficient', 'Low Maintenance', 'Modern Design'],
+      image: 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d',
+      characteristics: [
+        { icon: <Shield size={20} />, text: 'Corrosion Resistant' },
+        { icon: <Droplets size={20} />, text: 'Weather Sealed' },
+        { icon: <Zap size={20} />, text: 'Energy Efficient' },
+        { icon: <Sparkles size={20} />, text: 'Sleek Design' }
+      ],
+      gallery: [
+        'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d',
+        'https://images.unsplash.com/photo-1560472354-b33ff0c44a43',
+        'https://images.unsplash.com/photo-1554995207-c18c203602cb',
+        'https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5'
       ]
     }
   ];
@@ -382,12 +391,6 @@ onClick={() => navigate(`/gallery/${category.id}`)}
                       </div>
                     </div>
 
-                    {/* Price Range */}
-                    <div className="absolute top-4 right-4">
-                      <div className="bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-xs font-bold">
-                        {category.priceRange}
-                      </div>
-                    </div>
 
                     {/* Title Overlay */}
                     <div className="absolute bottom-4 left-4 right-4 text-white">
