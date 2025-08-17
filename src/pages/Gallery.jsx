@@ -2,21 +2,22 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { 
-  ChefHat, 
-  Home, 
-  Square, 
-  Shirt, 
-  Tv, 
-  Phone, 
-  Mail, 
+import {
+  ChefHat,
+  Home,
+  Square,
+  Shirt,
+  Tv,
+  Phone,
+  Mail,
   ArrowRight,
   CheckCircle,
   Droplets,
   Shield,
   Recycle,
   Sparkles,
-  Zap
+  Zap,
+  Wind
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
