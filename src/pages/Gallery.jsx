@@ -128,7 +128,6 @@ const Gallery = () => {
       icon: <Tv size={32} />,
       description: 'Modern TV cabinets with integrated storage and style',
       shortDesc: 'Entertainment center solutions',
-      priceRange: '₹600 - ₹1,200 /sq ft',
       projectTime: '4-7 days',
       warranty: '8 years',
       popularFeatures: ['Cable Management', 'LED Strips', 'Hidden Storage', 'Wall Mount Ready'],
@@ -142,10 +141,31 @@ const Gallery = () => {
       gallery: [
         'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
         'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e'
+        'https://images.unsplash.com/photo-1560185007-cde436f6a4d0',
+        'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c'
+      ]
+    },
+    {
+      id: 'aluminium',
+      name: 'Aluminium Windows & Doors',
+      icon: <Square size={32} />,
+      description: 'Premium aluminium windows and doors with superior durability, energy efficiency, and modern aesthetics. Perfect for residential and commercial applications with excellent weather resistance.',
+      shortDesc: 'Premium aluminium solutions',
+      projectTime: '7-10 days',
+      warranty: '15 years',
+      popularFeatures: ['Weather Resistant', 'Energy Efficient', 'Low Maintenance', 'Modern Design'],
+      image: 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d',
+      characteristics: [
+        { icon: <Shield size={20} />, text: 'Corrosion Resistant' },
+        { icon: <Droplets size={20} />, text: 'Weather Sealed' },
+        { icon: <Zap size={20} />, text: 'Energy Efficient' },
+        { icon: <Sparkles size={20} />, text: 'Sleek Design' }
+      ],
+      gallery: [
+        'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d',
+        'https://images.unsplash.com/photo-1560472354-b33ff0c44a43',
+        'https://images.unsplash.com/photo-1554995207-c18c203602cb',
+        'https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5'
       ]
     }
   ];
