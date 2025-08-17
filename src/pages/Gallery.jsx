@@ -390,12 +390,6 @@ onClick={() => navigate(`/gallery/${category.id}`)}
                       </div>
                     </div>
 
-                    {/* Price Range */}
-                    <div className="absolute top-4 right-4">
-                      <div className="bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-xs font-bold">
-                        {category.priceRange}
-                      </div>
-                    </div>
 
                     {/* Title Overlay */}
                     <div className="absolute bottom-4 left-4 right-4 text-white">
