@@ -59,7 +59,6 @@ const FeaturedProducts = () => {
                   <CardContent className="flex-1 p-3 flex flex-col justify-between">
                     <div>
                       <h3 className="text-sm font-semibold mb-1 heading-tertiary line-clamp-1">{product.name}</h3>
-                      <p className="text-xs text-body mb-2">Color: <span className="font-medium" style={{ color: 'hsl(var(--wpc-warm))' }}>{product.color}</span></p>
                       <p className="text-lg font-bold mb-2" style={{ color: 'hsl(var(--wpc-warm))' }}>{product.sqFeetPrice}</p>
                     </div>
                     <Link to={`/product/${product.id}`}>
@@ -93,7 +92,6 @@ const FeaturedProducts = () => {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2 heading-tertiary">{product.name}</h3>
-                  <p className="text-body mb-2">Color: <span className="font-semibold" style={{ color: 'hsl(var(--wpc-warm))' }}>{product.color}</span></p>
                   <p className="text-2xl font-bold mb-4" style={{ color: 'hsl(var(--wpc-warm))' }}>{product.sqFeetPrice}</p>
                   <Link to={`/product/${product.id}`}>
                     <Button className="w-full wpc-btn-primary">

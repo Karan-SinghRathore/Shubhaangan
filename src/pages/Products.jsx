@@ -23,9 +23,10 @@ const Products = () => {
   const categories = [
     { id: 'all', name: 'All Products', count: products.length },
     { id: 'glossy', name: 'Glossy', count: products.filter(p => p.category === 'glossy').length },
-    { id: 'texture-pro', name: 'Texture Pro', count: products.filter(p => p.category === 'texture-pro').length },
+    { id: 'Matt', name: 'Matt', count: products.filter(p => p.category === 'Matt').length },
     { id: 'texture', name: 'Texture', count: products.filter(p => p.category === 'texture').length },
-    { id: 'ceiling', name: 'Ceiling', count: products.filter(p => p.category === 'ceiling').length }
+    { id: 'ceiling', name: 'Ceiling', count: products.filter(p => p.category === 'ceiling').length },
+    { id: 'doors', name: 'doors', count: products.filter(p => p.category === 'doors').length }
   ];
 
   const priceRanges = [
@@ -114,7 +115,7 @@ const Products = () => {
       <FloatingActions />
       <SEO 
         title="WPC Products - ShubhAangan | Premium WPC Sheets & Solutions"
-        description="Browse our extensive collection of premium WPC sheets including glossy finishes, texture pro designs, and ceiling solutions. Find the perfect WPC materials for your modular kitchen, bedroom, and office projects."
+        description="Browse our extensive collection of premium WPC sheets including glossy finishes, Matt designs, and ceiling solutions. Find the perfect WPC materials for your modular kitchen, bedroom, and office projects."
         keywords="WPC sheets, modular kitchen, bedroom furniture, office furniture, ceiling panels, glossy sheets, texture sheets"
       />
 
@@ -130,7 +131,7 @@ const Products = () => {
             className="text-4xl md:text-6xl font-bold heading-primary mb-6"
             style={{ color: 'hsl(var(--wpc-text-primary))' }}
           >
-            Our WPC Products
+            Our Products
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -139,7 +140,7 @@ const Products = () => {
             className="text-xl text-large max-w-3xl mx-auto mb-8"
             style={{ color: 'hsl(var(--wpc-text-secondary))' }}
           >
-            Discover our premium collection of WPC sheets and solutions designed to transform any space
+            Discover our premium collection of WPC/UPVC sheets and solutions designed to transform any space
           </motion.p>
           
           {/* Search Bar */}
@@ -331,7 +332,7 @@ const Products = () => {
                         </div>
 
                         <p className="text-xs text-body mb-2">
-                          Color: <span className="font-medium">{product.color}</span>
+                          {/* Color: <span className="font-medium">{product.color}</span> */}
                         </p>
                       </div>
 
@@ -392,7 +393,7 @@ const Products = () => {
                     </div>
 
                     <p className="text-body mb-1 text-sm">
-                      Color: <span className="font-medium">{product.color}</span>
+                      {/* Color: <span className="font-medium">{product.color}</span> */}
                     </p>
 
                     <div className="flex items-center justify-between mb-2">

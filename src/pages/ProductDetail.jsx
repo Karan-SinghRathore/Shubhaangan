@@ -157,7 +157,7 @@ const ProductDetail = () => {
             >
               <div>
                 <h1 className="text-4xl font-bold heading-primary mb-4">{product.name}</h1>
-                <p className="text-xl text-gray-600 mb-2">Color: <span className="font-semibold">{product.color}</span></p>
+                {/* <p className="text-xl text-gray-600 mb-2">Color: <span className="font-semibold">{product.color}</span></p> */}
                 <p className="text-3xl font-bold text-amber-700 mb-4">{product.sqFeetPrice}</p>
                 <p className="text-gray-700 text-lg leading-relaxed">{product.description}</p>
               </div>
