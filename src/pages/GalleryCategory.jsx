@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { 
-  ChefHat, 
-  Home, 
-  Square, 
-  Shirt, 
-  Tv, 
-  Phone, 
-  Mail, 
+import {
+  ChefHat,
+  Home,
+  Square,
+  Shirt,
+  Tv,
+  Phone,
+  Mail,
   ArrowRight,
   ArrowLeft,
   CheckCircle,
@@ -25,7 +25,8 @@ import {
   TrendingUp,
   Heart,
   Camera,
-  Download
+  Download,
+  Wind
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
