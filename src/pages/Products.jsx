@@ -90,20 +90,6 @@ const Products = () => {
     return filtered.sort(sortFunction);
   }, [selectedCategory, selectedPriceRange, debouncedSearchTerm, sortBy]);
 
-  const getAverageRating = (reviews) => {
-    if (!reviews || reviews.length === 0) return 0;
-    return reviews.reduce((acc, review) => acc + review.rating, 0) / reviews.length;
-  };
-
-  const renderStars = (rating) => {
-    return Array.from({ length: 5 }, (_, i) => (
-      <Star
-        key={i}
-        size={14}
-        className={i < Math.floor(rating) ? 'text-yellow-400 fill-current' : 'text-gray-300'}
-      />
-    ));
-  };
 
   return (
     <>
