@@ -36,7 +36,6 @@ const Gallery = () => {
       icon: <ChefHat size={32} />,
       description: 'Modern modular kitchen solutions with premium WPC materials',
       shortDesc: 'Waterproof modular kitchens',
-      priceRange: '₹1,200 - ₹2,500 /sq ft',
       projectTime: '10-15 days',
       warranty: '10 years',
       popularFeatures: ['Soft-Close Hinges', 'Pull-Out Drawers', 'Anti-Scratch Surface', 'Modular Design'],
@@ -50,9 +49,7 @@ const Gallery = () => {
       gallery: [
         'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
         'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136',
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136',
+        'https://images.unsplash.com/photo-1596178065887-1198b6148b2b',
         'https://images.unsplash.com/photo-1586023492125-27b2c045efd7'
       ]
     },
