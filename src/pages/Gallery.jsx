@@ -59,7 +59,6 @@ const Gallery = () => {
       icon: <Home size={32} />,
       description: 'Elegant false ceiling designs with acoustic properties',
       shortDesc: 'Acoustic & designer ceilings',
-      priceRange: '₹85 - ₹150 /sq ft',
       projectTime: '5-8 days',
       warranty: '5 years',
       popularFeatures: ['LED Integration', 'Sound Absorption', 'Fire Resistant', 'Easy Access'],
@@ -73,10 +72,8 @@ const Gallery = () => {
       gallery: [
         'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6',
         'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2',
-        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6',
-        'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2',
-        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6',
-        'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2'
+        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
+        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6'
       ]
     },
     {
