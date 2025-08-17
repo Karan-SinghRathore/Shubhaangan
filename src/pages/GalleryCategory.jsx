@@ -63,10 +63,10 @@ const GalleryCategory = () => {
         'Quick Installation', 'Anti-Bacterial Coating'
       ],
       gallery: [
-        'https://images.pexels.com/photos/5644353/pexels-photo-5644353.jpeg',
-        'https://images.pexels.com/photos/6508341/pexels-photo-6508341.jpeg',
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7'
+        'https://images.pexels.com/photos/8146160/pexels-photo-8146160.jpeg',
+        'https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg',
+        'https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg',
+        'https://images.pexels.com/photos/12700379/pexels-photo-12700379.jpeg'
       ],
       process: [
         { step: 1, title: 'Consultation', desc: 'Free home visit and measurement' },
@@ -103,10 +103,10 @@ const GalleryCategory = () => {
         'Multiple Designs', 'Maintenance Free'
       ],
       gallery: [
-        'https://images.pexels.com/photos/5863506/pexels-photo-5863506.jpeg',
-        'https://images.pexels.com/photos/7534167/pexels-photo-7534167.jpeg',
-        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6',
-        'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2'
+        'https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg',
+        'https://images.pexels.com/photos/20059731/pexels-photo-20059731.jpeg',
+        'https://images.pexels.com/photos/1487154/pexels-photo-1487154.jpeg',
+        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6'
       ],
       process: [
         { step: 1, title: 'Site Survey', desc: 'Detailed measurement and planning' },
@@ -144,10 +144,10 @@ const GalleryCategory = () => {
         'Multiple Finishes', 'Cost Effective'
       ],
       gallery: [
-        'https://images.pexels.com/photos/450063/pexels-photo-450063.jpeg',
-        'https://images.unsplash.com/photo-1571055107559-3e67626fa8be',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1571055107559-3e67626fa8be'
+        'https://images.pexels.com/photos/20899969/pexels-photo-20899969.jpeg',
+        'https://images.pexels.com/photos/11449320/pexels-photo-11449320.jpeg',
+        'https://images.pexels.com/photos/3213031/pexels-photo-3213031.png',
+        'https://images.pexels.com/photos/11775864/pexels-photo-11775864.jpeg'
       ],
       process: [
         { step: 1, title: 'Wall Preparation', desc: 'Clean and prepare wall surface' },
@@ -183,10 +183,10 @@ const GalleryCategory = () => {
         'Custom Compartments', 'Anti-Sag Support'
       ],
       gallery: [
-        'https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg',
-        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
-        'https://images.unsplash.com/photo-1581539250439-c96689b516dd',
-        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267'
+        'https://images.pexels.com/photos/7031766/pexels-photo-7031766.jpeg',
+        'https://images.pexels.com/photos/271695/pexels-photo-271695.jpeg',
+        'https://images.pexels.com/photos/6585617/pexels-photo-6585617.jpeg',
+        'https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg'
       ],
       process: [
         { step: 1, title: 'Space Analysis', desc: 'Detailed room measurement and design' },
@@ -222,10 +222,10 @@ const GalleryCategory = () => {
         'Remote Storage', 'Cord Concealment'
       ],
       gallery: [
-        'https://images.pexels.com/photos/7546231/pexels-photo-7546231.jpeg',
-        'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e'
+        'https://images.pexels.com/photos/6587825/pexels-photo-6587825.jpeg',
+        'https://images.pexels.com/photos/5825543/pexels-photo-5825543.jpeg',
+        'https://images.pexels.com/photos/13051217/pexels-photo-13051217.jpeg',
+        'https://images.pexels.com/photos/7546231/pexels-photo-7546231.jpeg'
       ],
       process: [
         { step: 1, title: 'Room Survey', desc: 'TV size and room layout assessment' },
