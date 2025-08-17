@@ -12,6 +12,7 @@ import { products, getProductsByCategory } from '@/data/products';
 import { debounce, getSearchableText, sortFunctions } from '@/utils/productFilters';
 import FloatingActions from '@/components/FloatingActions';
 import SEO from '@/components/SEO';
+import LazyImage from '@/components/LazyImage';
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -296,11 +297,10 @@ const Products = () => {
                 <Card className="card-hover overflow-hidden group md:hidden">
                   <div className="flex min-h-[100px]">
                     <div className="relative w-28 h-24 flex-shrink-0">
-                      <img
+                      <LazyImage
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         alt={product.name}
                         src={product.image}
-                        loading="lazy"
                       />
                       <div className="absolute top-1 left-1">
                         <span className="bg-white/90 text-gray-800 text-[8px] font-semibold px-1 py-0.5 rounded">
@@ -346,11 +346,10 @@ const Products = () => {
                 {/* Desktop Layout (vertical card) */}
                 <Card className="card-hover overflow-hidden group h-full flex-col hidden md:flex">
                   <div className="relative">
-                    <img
+                    <LazyImage
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                       alt={product.name}
                       src={product.image}
-                      loading="lazy"
                     />
 
                     <div className="absolute top-3 left-3 flex-wrap gap-1">
@@ -425,11 +424,10 @@ const Products = () => {
                   <Card className="card-hover overflow-hidden">
                     <div className="flex">
                       <div className="w-48 h-32 flex-shrink-0">
-                        <img
+                        <LazyImage
                           className="w-full h-full object-cover"
                           alt={product.name}
                           src={product.image}
-                          loading="lazy"
                         />
                       </div>
                       <CardContent className="flex-1 p-6">
