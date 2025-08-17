@@ -1144,7 +1144,7 @@ export const products = [
       { project: "Residential Floor", price: "₹35/sq ft" },
       { project: "Outdoor Patio", price: "₹40/sq ft" },
       { project: "Commercial Lobby", price: "₹42/sq ft" },
-      { project: "Restaurant Interior", price: "₹38/sq ft" }
+      { project: "Restaurant Interior", price: "���38/sq ft" }
     ],
     reviews: [
       { name: "David Wilson", rating: 4, comment: "Love the natural texture. Perfect for our patio." },
@@ -1738,9 +1738,22 @@ export const getProductById = (id) => {
   return products.find(product => product.id === parseInt(id));
 };
 
+// Memoized category filtering for better performance
+const categoryCache = new Map();
+
 export const getProductsByCategory = (category) => {
   if (category === 'all') return products;
-  return products.filter(product => product.category === category);
+
+  // Check cache first
+  if (categoryCache.has(category)) {
+    return categoryCache.get(category);
+  }
+
+  // Filter and cache result
+  const filtered = products.filter(product => product.category === category);
+  categoryCache.set(category, filtered);
+
+  return filtered;
 };
 
 export const getCeilingProducts = () => {
