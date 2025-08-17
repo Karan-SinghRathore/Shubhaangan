@@ -41,7 +41,7 @@ const Gallery = () => {
       projectTime: '10-15 days',
       warranty: '10 years',
       popularFeatures: ['Soft-Close Hinges', 'Pull-Out Drawers', 'Anti-Scratch Surface', 'Modular Design'],
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
+      image: 'https://images.pexels.com/photos/8146160/pexels-photo-8146160.jpeg',
       characteristics: [
         { icon: <Droplets size={20} />, text: '100% Waterproof' },
         { icon: <Shield size={20} />, text: 'Termite Resistant' },
@@ -67,7 +67,7 @@ const Gallery = () => {
       projectTime: '5-8 days',
       warranty: '5 years',
       popularFeatures: ['LED Integration', 'Sound Absorption', 'Fire Resistant', 'Easy Access'],
-      image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6',
+      image: 'https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg',
       characteristics: [
         { icon: <Zap size={20} />, text: 'LED Integration' },
         { icon: <Shield size={20} />, text: 'Fire Resistant' },
@@ -93,7 +93,7 @@ const Gallery = () => {
       projectTime: '3-5 days',
       warranty: '7 years',
       popularFeatures: ['3D Textures', 'Easy Install', 'Paintable Surface', 'Custom Patterns'],
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
+      image: 'https://images.pexels.com/photos/20899969/pexels-photo-20899969.jpeg',
       characteristics: [
         { icon: <Shield size={20} />, text: 'Durable Finish' },
         { icon: <Droplets size={20} />, text: 'Moisture Resistant' },
@@ -119,7 +119,7 @@ const Gallery = () => {
       projectTime: '8-12 days',
       warranty: '10 years',
       popularFeatures: ['Sliding Doors', 'Interior Organizers', 'Mirror Integration', 'Soft Close'],
-      image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
+      image: 'https://images.pexels.com/photos/7031766/pexels-photo-7031766.jpeg',
       characteristics: [
         { icon: <CheckCircle size={20} />, text: 'Spacious Design' },
         { icon: <Shield size={20} />, text: 'Long Lasting' },
@@ -145,7 +145,7 @@ const Gallery = () => {
       projectTime: '4-7 days',
       warranty: '8 years',
       popularFeatures: ['Cable Management', 'LED Strips', 'Hidden Storage', 'Wall Mount Ready'],
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
+      image: 'https://images.pexels.com/photos/6587825/pexels-photo-6587825.jpeg',
       characteristics: [
         { icon: <Zap size={20} />, text: 'Cable Management' },
         { icon: <CheckCircle size={20} />, text: 'Sturdy Build' },
@@ -159,6 +159,29 @@ const Gallery = () => {
         'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e',
         'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
         'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e'
+      ]
+    },
+    {
+      id: 'aluminum',
+      name: 'Aluminum Products',
+      icon: <Square size={32} />,
+      description: 'Premium aluminum sliding windows, doors and building solutions',
+      shortDesc: 'Windows, doors & facades',
+      projectTime: '7-10 days',
+      warranty: '15 years',
+      popularFeatures: ['Sliding Windows', 'Aluminum Doors', 'Modern Facades', 'Balcony Railings'],
+      image: 'https://images.pexels.com/photos/842153/pexels-photo-842153.jpeg',
+      characteristics: [
+        { icon: <Shield size={20} />, text: 'Corrosion Resistant' },
+        { icon: <Zap size={20} />, text: 'Energy Efficient' },
+        { icon: <CheckCircle size={20} />, text: 'Low Maintenance' },
+        { icon: <Sparkles size={20} />, text: 'Modern Design' }
+      ],
+      gallery: [
+        'https://images.pexels.com/photos/842153/pexels-photo-842153.jpeg',
+        'https://images.pexels.com/photos/4682126/pexels-photo-4682126.jpeg',
+        'https://images.pexels.com/photos/5271210/pexels-photo-5271210.jpeg',
+        'https://images.pexels.com/photos/19086451/pexels-photo-19086451.jpeg'
       ]
     }
   ];
