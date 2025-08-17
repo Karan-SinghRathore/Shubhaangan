@@ -5,12 +5,12 @@ import { Toaster } from '@/components/ui/toaster';
 import ScrollToTop from "@/components/ScrollToTop";
 
 import Home from '@/pages/Home.jsx';
-import Gallery from '@/pages/Gallery.jsx';
-import Contact from '@/pages/Contact.jsx';
 const Products = lazy(() => import('@/pages/Products.jsx'));
 const ProductDetail = lazy(() => import('@/pages/ProductDetail.jsx'));
+const Gallery = lazy(() => import('@/pages/Gallery.jsx'));
 const GalleryCategory = lazy(() => import('@/pages/GalleryCategory.jsx'));
 const About = lazy(() => import('@/pages/About.jsx'));
+const Contact = lazy(() => import('@/pages/Contact.jsx'));
 
 // Loading component
 const LoadingSpinner = () => (
