@@ -149,7 +149,7 @@ const Gallery = () => {
     {
       id: 'aluminium',
       name: 'Aluminium Windows & Doors',
-      icon: <Square size={32} />,
+      icon: <Wind size={32} />,
       description: 'Premium aluminium windows and doors with superior durability, energy efficiency, and modern aesthetics. Perfect for residential and commercial applications with excellent weather resistance.',
       shortDesc: 'Premium aluminium solutions',
       projectTime: '7-10 days',
