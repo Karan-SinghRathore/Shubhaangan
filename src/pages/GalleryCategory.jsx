@@ -63,14 +63,10 @@ const GalleryCategory = () => {
         'Quick Installation', 'Anti-Bacterial Coating'
       ],
       gallery: [
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
+        'https://images.pexels.com/photos/5644353/pexels-photo-5644353.jpeg',
+        'https://images.pexels.com/photos/6508341/pexels-photo-6508341.jpeg',
         'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136',
-        'https://images.unsplash.com/photo-1556909046-b47fb5c18b45',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136',
-        'https://images.unsplash.com/photo-1556909046-b47fb5c18b45',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136'
+        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7'
       ],
       process: [
         { step: 1, title: 'Consultation', desc: 'Free home visit and measurement' },
@@ -107,12 +103,8 @@ const GalleryCategory = () => {
         'Multiple Designs', 'Maintenance Free'
       ],
       gallery: [
-        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6',
-        'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2',
-        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6',
-        'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2',
-        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6',
-        'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2',
+        'https://images.pexels.com/photos/5863506/pexels-photo-5863506.jpeg',
+        'https://images.pexels.com/photos/7534167/pexels-photo-7534167.jpeg',
         'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6',
         'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2'
       ],
@@ -152,11 +144,7 @@ const GalleryCategory = () => {
         'Multiple Finishes', 'Cost Effective'
       ],
       gallery: [
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1571055107559-3e67626fa8be',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        'https://images.unsplash.com/photo-1571055107559-3e67626fa8be',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
+        'https://images.pexels.com/photos/450063/pexels-photo-450063.jpeg',
         'https://images.unsplash.com/photo-1571055107559-3e67626fa8be',
         'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
         'https://images.unsplash.com/photo-1571055107559-3e67626fa8be'
@@ -170,6 +158,84 @@ const GalleryCategory = () => {
       testimonials: [
         { name: 'Ravi Patel', rating: 5, comment: 'Transformed our living room completely. Great quality panels.', project: 'Living Room Accent Wall' },
         { name: 'Kavya Singh', rating: 4, comment: 'Easy to maintain and looks premium. Worth the investment.', project: 'Bedroom Feature Wall' }
+      ]
+    },
+    wardrobe: {
+      id: 'wardrobe',
+      name: 'Wardrobe',
+      icon: <Shirt size={40} />,
+      description: 'Spacious WPC wardrobes with modern storage solutions',
+      longDescription: 'Transform your bedroom storage with our premium WPC wardrobes. Featuring sliding doors, interior organizers, and mirror integration, our wardrobes combine functionality with style while offering complete moisture resistance.',
+      projectTime: '8-12 days',
+      warranty: '10 years',
+      rating: 4.8,
+      completedProjects: 180,
+      image: 'https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg',
+      characteristics: [
+        { icon: <CheckCircle size={24} />, title: 'Spacious Design', desc: 'Optimized storage with multiple compartments' },
+        { icon: <Shield size={24} />, title: 'Long Lasting', desc: 'Durable construction for years of use' },
+        { icon: <Droplets size={24} />, title: 'Humidity Resistant', desc: 'Perfect for Indian climate conditions' },
+        { icon: <Recycle size={24} />, title: 'Eco Material', desc: 'Sustainable WPC material construction' }
+      ],
+      features: [
+        'Sliding Doors', 'Interior Organizers', 'Mirror Integration',
+        'Soft Close Mechanism', 'Adjustable Shelves', 'LED Lighting',
+        'Custom Compartments', 'Anti-Sag Support'
+      ],
+      gallery: [
+        'https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg',
+        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
+        'https://images.unsplash.com/photo-1581539250439-c96689b516dd',
+        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267'
+      ],
+      process: [
+        { step: 1, title: 'Space Analysis', desc: 'Detailed room measurement and design' },
+        { step: 2, title: 'Layout Design', desc: 'Custom storage solution planning' },
+        { step: 3, title: 'Manufacturing', desc: 'Precision crafting in our facility' },
+        { step: 4, title: 'Installation', desc: 'Professional assembly and setup' }
+      ],
+      testimonials: [
+        { name: 'Neha Gupta', rating: 5, comment: 'Amazing storage space! The sliding doors work perfectly and it looks so elegant.', project: 'Master Bedroom Wardrobe' },
+        { name: 'Arun Kumar', rating: 4, comment: 'Great quality construction. Very happy with the interior organization.', project: 'Kids Room Wardrobe' }
+      ]
+    },
+    'tv-cabinet': {
+      id: 'tv-cabinet',
+      name: 'TV Cabinet',
+      icon: <Tv size={40} />,
+      description: 'Modern TV cabinets with integrated storage and style',
+      longDescription: 'Enhance your entertainment area with our stylish WPC TV cabinets. Featuring cable management, LED strip integration, and hidden storage, our designs perfectly complement modern living spaces.',
+      projectTime: '4-7 days',
+      warranty: '8 years',
+      rating: 4.6,
+      completedProjects: 220,
+      image: 'https://images.pexels.com/photos/7546231/pexels-photo-7546231.jpeg',
+      characteristics: [
+        { icon: <Zap size={24} />, title: 'Cable Management', desc: 'Built-in cable routing and organization' },
+        { icon: <CheckCircle size={24} />, title: 'Sturdy Build', desc: 'Supports large TVs and equipment' },
+        { icon: <Sparkles size={24} />, title: 'Modern Design', desc: 'Contemporary styling for any room' },
+        { icon: <Shield size={24} />, title: 'Scratch Resistant', desc: 'Durable surface finish' }
+      ],
+      features: [
+        'Cable Management', 'LED Strip Ready', 'Hidden Storage',
+        'Wall Mount Compatible', 'Adjustable Shelves', 'Ventilation Slots',
+        'Remote Storage', 'Cord Concealment'
+      ],
+      gallery: [
+        'https://images.pexels.com/photos/7546231/pexels-photo-7546231.jpeg',
+        'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e',
+        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
+        'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e'
+      ],
+      process: [
+        { step: 1, title: 'Room Survey', desc: 'TV size and room layout assessment' },
+        { step: 2, title: 'Design Selection', desc: 'Choose style and storage options' },
+        { step: 3, title: 'Custom Build', desc: 'Tailored manufacturing process' },
+        { step: 4, title: 'Setup & Install', desc: 'Professional installation and wiring' }
+      ],
+      testimonials: [
+        { name: 'Vikash Sharma', rating: 5, comment: 'Perfect TV cabinet! The cable management is excellent and it looks very premium.', project: 'Living Room Entertainment Center' },
+        { name: 'Shreya Patel', rating: 4, comment: 'Great storage space and the design matches our modern decor perfectly.', project: 'Family Room TV Unit' }
       ]
     }
   };
