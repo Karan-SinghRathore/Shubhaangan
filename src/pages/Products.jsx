@@ -287,6 +287,7 @@ const Products = () => {
               Showing {filteredProducts.length} of {products.length} products
               {searchTerm && ` for "${searchTerm}"`}
             </p>
+            <p className="text-sm text-gray-500 mt-2 italic">{priceNote}</p>
           </div>
 
           {/* Products Display */}
