@@ -245,11 +245,7 @@ const GalleryCategory = () => {
               
               <p className="text-xl text-white/90 mb-6 heading-secondary">{category.longDescription}</p>
               
-              <div className="grid grid-cols-3 gap-4 mb-8">
-                <div className="text-center">
-                  <div className="text-2xl font-bold heading-secondary">{category.priceRange}</div>
-                  <div className="text-sm text-white/80 heading-secondary">Price Range</div>
-                </div>
+              <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="text-center">
                   <div className="text-2xl font-bold heading-secondary">{category.projectTime}</div>
                   <div className="text-sm text-white/80 heading-secondary">Project Time</div>
