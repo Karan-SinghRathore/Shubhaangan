@@ -24,6 +24,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import FloatingActions from '@/components/FloatingActions';
 import SEO from '@/components/SEO';
+import LazyImage from '@/components/LazyImage';
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -236,11 +237,10 @@ const Gallery = () => {
                         transition={{ duration: 0.6, delay: index * 0.1 }}
                         className="relative group cursor-pointer"
                       >
-                        <img
+                        <LazyImage
                           src={image}
                           alt={`${selectedCategoryData.name} ${index + 1}`}
                           className="w-full h-48 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
                       </motion.div>
@@ -367,11 +367,10 @@ onClick={() => navigate(`/gallery/${category.id}`)}
               >
                 <Card className="card-hover overflow-hidden shadow-xl border border-gray-100">
                   <div className="relative">
-                    <img
+                    <LazyImage
                       src={category.image}
                       alt={category.name}
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
