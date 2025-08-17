@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
@@ -14,7 +14,6 @@ import SEO from '@/components/SEO';
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [filteredProducts, setFilteredProducts] = useState(products);
   const [viewMode, setViewMode] = useState('grid'); // grid or list
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('name'); // name, price-low, price-high, rating
@@ -39,61 +38,58 @@ const Products = () => {
 
   const [selectedPriceRange, setSelectedPriceRange] = useState('all');
 
-  const handleCategoryChange = (categoryId) => {
+  // Optimized handlers using useCallback
+  const handleCategoryChange = useCallback((categoryId) => {
     setSelectedCategory(categoryId);
-    applyFilters(categoryId, selectedPriceRange, searchTerm, sortBy);
-  };
+  }, []);
 
-  const handlePriceRangeChange = (priceRangeId) => {
+  const handlePriceRangeChange = useCallback((priceRangeId) => {
     setSelectedPriceRange(priceRangeId);
-    applyFilters(selectedCategory, priceRangeId, searchTerm, sortBy);
-  };
+  }, []);
 
-  const handleSearch = (term) => {
+  const handleSearch = useCallback((term) => {
     setSearchTerm(term);
-    applyFilters(selectedCategory, selectedPriceRange, term, sortBy);
-  };
+  }, []);
 
-  const handleSort = (sortType) => {
+  const handleSort = useCallback((sortType) => {
     setSortBy(sortType);
-    applyFilters(selectedCategory, selectedPriceRange, searchTerm, sortType);
-  };
+  }, []);
 
-  const applyFilters = (category, priceRange, search, sort) => {
-    let filtered = getProductsByCategory(category);
-    
+  // Memoized filtering for better performance
+  const filteredProducts = useMemo(() => {
+    let filtered = getProductsByCategory(selectedCategory);
+
     // Apply price filter
-    if (priceRange !== 'all') {
-      const range = priceRanges.find(r => r.id === priceRange);
+    if (selectedPriceRange !== 'all') {
+      const range = priceRanges.find(r => r.id === selectedPriceRange);
       filtered = filtered.filter(p => p.price >= range.min && p.price <= range.max);
     }
 
     // Apply search filter
-    if (search) {
-      filtered = filtered.filter(p => 
-        p.name.toLowerCase().includes(search.toLowerCase()) ||
-        p.description.toLowerCase().includes(search.toLowerCase()) ||
-        p.color.toLowerCase().includes(search.toLowerCase())
+    if (searchTerm) {
+      const searchLower = searchTerm.toLowerCase();
+      filtered = filtered.filter(p =>
+        p.name.toLowerCase().includes(searchLower) ||
+        p.description.toLowerCase().includes(searchLower) ||
+        (p.color && p.color.toLowerCase().includes(searchLower))
       );
     }
 
     // Apply sorting
-    filtered = filtered.sort((a, b) => {
-      switch (sort) {
+    return filtered.sort((a, b) => {
+      switch (sortBy) {
         case 'price-low':
           return a.price - b.price;
         case 'price-high':
           return b.price - a.price;
         case 'rating':
-          return (b.reviews?.reduce((acc, r) => acc + r.rating, 0) / b.reviews?.length || 0) - 
+          return (b.reviews?.reduce((acc, r) => acc + r.rating, 0) / b.reviews?.length || 0) -
                  (a.reviews?.reduce((acc, r) => acc + r.rating, 0) / a.reviews?.length || 0);
         default:
           return a.name.localeCompare(b.name);
       }
     });
-
-    setFilteredProducts(filtered);
-  };
+  }, [selectedCategory, selectedPriceRange, searchTerm, sortBy]);
 
   const getAverageRating = (reviews) => {
     if (!reviews || reviews.length === 0) return 0;
