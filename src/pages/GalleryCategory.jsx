@@ -51,7 +51,7 @@ const GalleryCategory = () => {
       warranty: '10 years',
       rating: 4.8,
       completedProjects: 500,
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
+      image: '/images/Gallery/kitchenn.jpeg',
       characteristics: [
         { icon: <Droplets size={24} />, title: '100% Waterproof', desc: 'Completely resistant to water damage and moisture' },
         { icon: <Shield size={24} />, title: 'Termite Resistant', desc: 'Natural protection against termites and pests' },
@@ -64,10 +64,10 @@ const GalleryCategory = () => {
         'Quick Installation', 'Anti-Bacterial Coating'
       ],
       gallery: [
-        'https://images.pexels.com/photos/8146160/pexels-photo-8146160.jpeg',
-        'https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg',
-        'https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg',
-        'https://images.pexels.com/photos/12700379/pexels-photo-12700379.jpeg'
+        '/images/Gallery/Kitchen/k1.jpeg',
+        '/images/Gallery/Kitchen/k2.jpeg',
+        '/images/Gallery/Kitchen/k3.jpeg',
+        '/images/Gallery/Kitchen/k4.jpeg'
       ],
       process: [
         { step: 1, title: 'Consultation', desc: 'Free home visit and measurement' },
@@ -91,7 +91,7 @@ const GalleryCategory = () => {
       warranty: '5 years',
       rating: 4.7,
       completedProjects: 300,
-      image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6',
+      image: '/images/Gallery/Falsee.jpeg',
       characteristics: [
         { icon: <Zap size={24} />, title: 'LED Integration', desc: 'Built-in LED strip compatibility' },
         { icon: <Shield size={24} />, title: 'Fire Resistant', desc: 'Meets all fire safety standards' },
@@ -104,10 +104,10 @@ const GalleryCategory = () => {
         'Multiple Designs', 'Maintenance Free'
       ],
       gallery: [
-        'https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg',
-        'https://images.pexels.com/photos/20059731/pexels-photo-20059731.jpeg',
-        'https://images.pexels.com/photos/1487154/pexels-photo-1487154.jpeg',
-        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6'
+        '/images/Gallery/False/f1.jpeg',
+        '/images/Gallery/False/f4.jpeg',
+        '/images/Gallery/False/f3.jpeg',
+        '/images/Gallery/False/f2.jpeg'
       ],
       process: [
         { step: 1, title: 'Site Survey', desc: 'Detailed measurement and planning' },
@@ -132,7 +132,7 @@ const GalleryCategory = () => {
       warranty: '7 years',
       rating: 4.6,
       completedProjects: 250,
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
+      image: '/images/Gallery/walll.jpeg',
       characteristics: [
         { icon: <Shield size={24} />, title: 'Durable Finish', desc: 'Long-lasting surface finish' },
         { icon: <Droplets size={24} />, title: 'Moisture Resistant', desc: 'Perfect for humid environments' },
@@ -145,10 +145,10 @@ const GalleryCategory = () => {
         'Multiple Finishes', 'Cost Effective'
       ],
       gallery: [
-        'https://images.pexels.com/photos/20899969/pexels-photo-20899969.jpeg',
-        'https://images.pexels.com/photos/11449320/pexels-photo-11449320.jpeg',
-        'https://images.pexels.com/photos/3213031/pexels-photo-3213031.png',
-        'https://images.pexels.com/photos/11775864/pexels-photo-11775864.jpeg'
+        '/images/Gallery/Wall/w1.jpeg',
+        '/images/Gallery/Wall/w2.jpeg',
+        '/images/Gallery/Wall/w3.jpeg',
+        '/images/Gallery/Wall/w4.jpeg'
       ],
       process: [
         { step: 1, title: 'Wall Preparation', desc: 'Clean and prepare wall surface' },
@@ -171,7 +171,7 @@ const GalleryCategory = () => {
       warranty: '10 years',
       rating: 4.8,
       completedProjects: 180,
-      image: 'https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg',
+      image: '/images/Gallery/wardrobee.jpeg',
       characteristics: [
         { icon: <CheckCircle size={24} />, title: 'Spacious Design', desc: 'Optimized storage with multiple compartments' },
         { icon: <Shield size={24} />, title: 'Long Lasting', desc: 'Durable construction for years of use' },
@@ -184,10 +184,10 @@ const GalleryCategory = () => {
         'Custom Compartments', 'Anti-Sag Support'
       ],
       gallery: [
-        'https://images.pexels.com/photos/7031766/pexels-photo-7031766.jpeg',
-        'https://images.pexels.com/photos/271695/pexels-photo-271695.jpeg',
-        'https://images.pexels.com/photos/6585617/pexels-photo-6585617.jpeg',
-        'https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg'
+        '/images/Gallery/Wardrobe/w1.jpeg',
+        '/images/Gallery/Wardrobe/w2.jpeg',
+        '/images/Gallery/Wardrobe/w3.jpeg',
+        '/images/Gallery/Wardrobe/w4.jpeg'
       ],
       process: [
         { step: 1, title: 'Space Analysis', desc: 'Detailed room measurement and design' },
@@ -210,7 +210,7 @@ const GalleryCategory = () => {
       warranty: '8 years',
       rating: 4.6,
       completedProjects: 220,
-      image: 'https://images.pexels.com/photos/7546231/pexels-photo-7546231.jpeg',
+      image: '/images/Gallery/tv.jpeg',
       characteristics: [
         { icon: <Zap size={24} />, title: 'Cable Management', desc: 'Built-in cable routing and organization' },
         { icon: <CheckCircle size={24} />, title: 'Sturdy Build', desc: 'Supports large TVs and equipment' },
@@ -223,10 +223,10 @@ const GalleryCategory = () => {
         'Remote Storage', 'Cord Concealment'
       ],
       gallery: [
-        'https://images.pexels.com/photos/6587825/pexels-photo-6587825.jpeg',
-        'https://images.pexels.com/photos/5825543/pexels-photo-5825543.jpeg',
-        'https://images.pexels.com/photos/13051217/pexels-photo-13051217.jpeg',
-        'https://images.pexels.com/photos/7546231/pexels-photo-7546231.jpeg'
+        '/images/Gallery/TV Cabinet/t1.jpeg',
+        '/images/Gallery/TV Cabinet/t2.jpeg',
+        '/images/Gallery/TV Cabinet/t3.jpeg',
+        '/images/Gallery/TV Cabinet/t4.jpeg'
       ],
       process: [
         { step: 1, title: 'Room Survey', desc: 'TV size and room layout assessment' },
@@ -250,7 +250,7 @@ const GalleryCategory = () => {
       warranty: '15 years',
       rating: 4.7,
       completedProjects: 150,
-      image: 'https://images.pexels.com/photos/842153/pexels-photo-842153.jpeg',
+      image: '/images/Gallery/Aluminium.jpeg',
       characteristics: [
         { icon: <Shield size={24} />, title: 'Corrosion Resistant', desc: 'Superior protection against rust and weather' },
         { icon: <Zap size={24} />, title: 'Energy Efficient', desc: 'Thermal insulation for better energy savings' },
@@ -263,12 +263,10 @@ const GalleryCategory = () => {
         'Powder Coating', 'Security Features'
       ],
       gallery: [
-        'https://images.pexels.com/photos/842153/pexels-photo-842153.jpeg',
-        'https://images.pexels.com/photos/4682126/pexels-photo-4682126.jpeg',
-        'https://images.pexels.com/photos/5271210/pexels-photo-5271210.jpeg',
-        'https://images.pexels.com/photos/19086451/pexels-photo-19086451.jpeg',
-        'https://images.pexels.com/photos/210464/pexels-photo-210464.jpeg',
-        'https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg'
+        '/images/Gallery/Aluminium/a1.jpeg',
+        '/images/Gallery/Aluminium/a2.jpeg',
+        '/images/Gallery/Aluminium/a3.jpeg',
+        '/images/Gallery/Aluminium/a4.jpeg'
       ],
       process: [
         { step: 1, title: 'Site Measurement', desc: 'Precise measurement and structural assessment' },
@@ -390,12 +388,10 @@ const GalleryCategory = () => {
               <OptimizedImage
                 src={category.gallery[selectedImageIndex]}
                 alt={category.name}
-                width={800}
-                height={600}
                 className="w-full h-96 rounded-xl shadow-2xl"
                 priority={true}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl" />
+              <div className="absolute inset-0  from-black/30  rounded-xl" />
             </motion.div>
           </div>
         </div>
@@ -460,14 +456,11 @@ const GalleryCategory = () => {
                 <OptimizedImage
                   src={image}
                   alt={`${category.name} ${index + 1}`}
-                  width={400}
-                  height={300}
                   className="w-full h-48 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                   priority={index < 4}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
+                <div className="absolute inset-0  from-black/50  opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
                 <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Camera className="text-white" size={20} />
                 </div>
               </div>
             ))}

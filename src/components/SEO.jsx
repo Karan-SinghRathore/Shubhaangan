@@ -19,7 +19,7 @@ const SEO = ({
     "url": "https://shubhaangan.com",
     "telephone": "+91-8114468410",
     "email": "shubhaanganhd@gmail.com",
-    "logo": "https://shubhaangan.com/logo.png",
+    "logo": "https://shubhaanganhd.com/logo.png",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7",
     "founder": "ShubhAangan Team",
     "foundingDate": "2017",

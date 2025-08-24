@@ -19,14 +19,14 @@ const ProductDetail = () => {
 
   // Color variants data
   const colorVariants = [
-    { name: 'Oak Brown', color: '#8B4513', image: 'https://images.unsplash.com/photo-1635865165118-917ed9e20936' },
-    { name: 'Teak Natural', color: '#CD853F', image: 'https://images.unsplash.com/photo-1595872018818-97555653a011' },
-    { name: 'Walnut Dark', color: '#654321', image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91' },
-    { name: 'Pine Light', color: '#FFC000', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7' },
-    { name: 'Mahogany Rich', color: '#C04000', image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91' },
-    { name: 'Cedar Red', color: '#8B5A2B', image: 'https://images.unsplash.com/photo-1571055107559-3e67626fa8be' },
-    { name: 'Bamboo Natural', color: '#E1C16E', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7' },
-    { name: 'Ash Grey', color: '#B2B2B2', image: 'https://images.unsplash.com/photo-1595872018818-97555653a011' }
+    { name: 'Oak Brown', color: '#8B4513' },
+    { name: 'Teak Natural', color: '#CD853F' },
+    { name: 'Walnut Dark', color: '#654321' },
+    { name: 'Pine Light', color: '#FFC000' },
+    { name: 'Mahogany Rich', color: '#C04000' },
+    { name: 'Cedar Red', color: '#8B5A2B' },
+    { name: 'Bamboo Natural', color: '#E1C16E' },
+    { name: 'Ash Grey', color: '#B2B2B2' }
   ];
 
   if (!product) {

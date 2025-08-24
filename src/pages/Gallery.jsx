@@ -42,20 +42,12 @@ const Gallery = () => {
       projectTime: '10-15 days',
       warranty: '10 years',
       popularFeatures: ['Soft-Close Hinges', 'Pull-Out Drawers', 'Anti-Scratch Surface', 'Modular Design'],
-      image: 'https://images.pexels.com/photos/8146160/pexels-photo-8146160.jpeg',
+      image: '/images/Gallery/kitchenn.jpeg',
       characteristics: [
         { icon: <Droplets size={20} />, text: '100% Waterproof' },
         { icon: <Shield size={20} />, text: 'Termite Resistant' },
         { icon: <Recycle size={20} />, text: 'Eco-Friendly' },
         { icon: <Sparkles size={20} />, text: 'Easy to Clean' }
-      ],
-      gallery: [
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=60'
       ]
     },
     {
@@ -68,20 +60,12 @@ const Gallery = () => {
       projectTime: '5-8 days',
       warranty: '5 years',
       popularFeatures: ['LED Integration', 'Sound Absorption', 'Fire Resistant', 'Easy Access'],
-      image: 'https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg',
+      image: '/images/Gallery/Falsee.jpeg',
       characteristics: [
         { icon: <Zap size={20} />, text: 'LED Integration' },
         { icon: <Shield size={20} />, text: 'Fire Resistant' },
         { icon: <CheckCircle size={20} />, text: 'Sound Dampening' },
         { icon: <Sparkles size={20} />, text: 'Premium Finish' }
-      ],
-      gallery: [
-        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1545041454-6f53b06c6ed2?w=600&auto=format&fit=crop&q=60'
       ]
     },
     {
@@ -94,20 +78,12 @@ const Gallery = () => {
       projectTime: '3-5 days',
       warranty: '7 years',
       popularFeatures: ['3D Textures', 'Easy Install', 'Paintable Surface', 'Custom Patterns'],
-      image: 'https://images.pexels.com/photos/20899969/pexels-photo-20899969.jpeg',
+      image: '/images/Gallery/walll.jpeg',
       characteristics: [
         { icon: <Shield size={20} />, text: 'Durable Finish' },
         { icon: <Droplets size={20} />, text: 'Moisture Resistant' },
         { icon: <Recycle size={20} />, text: 'Sustainable' },
         { icon: <Sparkles size={20} />, text: 'Designer Patterns' }
-      ],
-      gallery: [
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd?w=600&auto=format&fit=crop&q=607?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=600&auto=format&fit=crop&q=60'
       ]
     },
     {
@@ -120,20 +96,12 @@ const Gallery = () => {
       projectTime: '8-12 days',
       warranty: '10 years',
       popularFeatures: ['Sliding Doors', 'Interior Organizers', 'Mirror Integration', 'Soft Close'],
-      image: 'https://images.pexels.com/photos/7031766/pexels-photo-7031766.jpeg',
+      image: '/images/Gallery/wardrobee.jpeg',
       characteristics: [
         { icon: <CheckCircle size={20} />, text: 'Spacious Design' },
         { icon: <Shield size={20} />, text: 'Long Lasting' },
         { icon: <Droplets size={20} />, text: 'Humidity Resistant' },
         { icon: <Recycle size={20} />, text: 'Eco Material' }
-      ],
-      gallery: [
-        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=600&auto=format&fit=crop&q=60'
       ]
     },
     {
@@ -146,20 +114,12 @@ const Gallery = () => {
       projectTime: '4-7 days',
       warranty: '8 years',
       popularFeatures: ['Cable Management', 'LED Strips', 'Hidden Storage', 'Wall Mount Ready'],
-      image: 'https://images.pexels.com/photos/6587825/pexels-photo-6587825.jpeg',
+      image: '/images/Gallery/tv.jpeg',
       characteristics: [
         { icon: <Zap size={20} />, text: 'Cable Management' },
         { icon: <CheckCircle size={20} />, text: 'Sturdy Build' },
         { icon: <Sparkles size={20} />, text: 'Modern Design' },
         { icon: <Shield size={20} />, text: 'Scratch Resistant' }
-      ],
-      gallery: [
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=60',
-        'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&auto=format&fit=crop&q=60'
       ]
     },
     {
@@ -172,20 +132,12 @@ const Gallery = () => {
       projectTime: '7-10 days',
       warranty: '15 years',
       popularFeatures: ['Sliding Windows', 'Aluminum Doors', 'Modern Facades', 'Balcony Railings'],
-      image: 'https://images.pexels.com/photos/842153/pexels-photo-842153.jpeg',
+      image: '/images/Gallery/Aluminium.jpeg',
       characteristics: [
         { icon: <Shield size={20} />, text: 'Corrosion Resistant' },
         { icon: <Zap size={20} />, text: 'Energy Efficient' },
         { icon: <CheckCircle size={20} />, text: 'Low Maintenance' },
         { icon: <Sparkles size={20} />, text: 'Modern Design' }
-      ],
-      gallery: [
-        'https://images.pexels.com/photos/842153/pexels-photo-842153.jpeg',
-        'https://images.pexels.com/photos/4682126/pexels-photo-4682126.jpeg',
-        'https://images.pexels.com/photos/5271210/pexels-photo-5271210.jpeg',
-        'https://images.pexels.com/photos/19086451/pexels-photo-19086451.jpeg',
-        'https://images.pexels.com/photos/210464/pexels-photo-210464.jpeg',
-        'https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg'
       ]
     }
   ];
@@ -264,7 +216,7 @@ const Gallery = () => {
                           className="w-full h-48 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                           priority={index < 3}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/50  opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
                       </div>
                     ))}
                   </div>
@@ -395,7 +347,7 @@ const Gallery = () => {
                       className="w-full h-48 group-hover:scale-110 transition-transform duration-300"
                       priority={index < 3}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 " />
 
                     {/* Category Badge */}
                     <div className="absolute top-4 left-4">
