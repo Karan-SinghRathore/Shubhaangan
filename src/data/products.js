@@ -1722,7 +1722,7 @@ export const products = [
       "/images/td-09-texture.webp"
     ],
     pricing: [
-      { project: "Residential Floor", price: "₹530/sq ft" },
+      { project: "Residential floor", price: "₹530/sq ft" },
       { project: "Outdoor Patio", price: "₹570/sq ft" },
       { project: "Commercial Lobby", price: "₹580/sq ft" },
       { project: "Restaurant Interior", price: "₹550/sq ft" }
