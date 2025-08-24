@@ -6,21 +6,21 @@ import { Card, CardContent } from '@/components/ui/card';
 const CustomerReviews = () => {
   const reviews = [
     {
-      name: "Sarah Johnson",
+      name: "Ramesh Jain",
       rating: 5,
-      comment: "Absolutely amazing quality! The WPC modular kitchen transformed our entire home. Professional service and beautiful results.",
+      comment: "Absolutely amazing quality! The WPC/UPVC modular kitchen transformed our entire home. Professional service and beautiful results.",
       project: "Modular Kitchen"
     },
     {
-      name: "Mike Chen",
+      name: "Mohan Chauhan",
       rating: 5,
-      comment: "Outstanding craftsmanship and attention to detail. The WPC office furniture exceeded our expectations in every way.",
+      comment: "Outstanding craftsmanship and attention to detail. The WPC/UPVC office furniture exceeded our expectations in every way.",
       project: "Office Complex"
     },
     {
-      name: "Emily Davis",
-      rating: 5,
-      comment: "Perfect WPC solutions for our restaurant. Durable, beautiful, and easy to maintain. Highly recommended!",
+      name: "Harsh Gupta",
+      rating: 4.5,
+      comment: "Perfect WPC/UPVC solutions for our restaurant. Durable, beautiful, and easy to maintain. Highly recommended!",
       project: "Restaurant Design"
     }
   ];

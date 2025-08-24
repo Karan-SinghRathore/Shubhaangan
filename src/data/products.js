@@ -1263,7 +1263,7 @@ export const products = [
       "Superior sound absorption",
       "Easy installation system",
       "Moisture and fire resistant",
-      "Eco-friendly WPC material",
+      "Eco-friendly WPC/UPVC material",
       "Low maintenance"
     ],
     gallery: [
@@ -1296,7 +1296,7 @@ export const products = [
       "Superior sound absorption",
       "Easy installation system",
       "Moisture and fire resistant",
-      "Eco-friendly WPC material",
+      "Eco-friendly WPC/UPVC material",
       "Low maintenance"
     ],
     gallery: [
@@ -1329,7 +1329,7 @@ export const products = [
       "Superior sound absorption",
       "Easy installation system",
       "Moisture and fire resistant",
-      "Eco-friendly WPC material",
+      "Eco-friendly WPC/UPVC material",
       "Low maintenance"
     ],
     gallery: [
@@ -1361,7 +1361,7 @@ export const products = [
       "Superior sound absorption",
       "Easy installation system",
       "Moisture and fire resistant",
-      "Eco-friendly WPC material",
+      "Eco-friendly WPC/UPVC material",
       "Low maintenance"
     ],
     gallery: [
@@ -1393,7 +1393,7 @@ export const products = [
       "Superior sound absorption",
       "Easy installation system",
       "Moisture and fire resistant",
-      "Eco-friendly WPC material",
+      "Eco-friendly WPC/UPVC material",
       "Low maintenance"
     ],
     gallery: [
@@ -1425,7 +1425,7 @@ export const products = [
       "Superior sound absorption",
       "Easy installation system",
       "Moisture and fire resistant",
-      "Eco-friendly WPC material",
+      "Eco-friendly WPC/UPVC material",
       "Low maintenance"
     ],
     gallery: [
@@ -1457,7 +1457,7 @@ export const products = [
       "Superior sound absorption",
       "Easy installation system",
       "Moisture and fire resistant",
-      "Eco-friendly WPC material",
+      "Eco-friendly WPC/UPVC material",
       "Low maintenance"
     ],
     gallery: [
@@ -1489,7 +1489,7 @@ export const products = [
       "Superior sound absorption",
       "Easy installation system",
       "Moisture and fire resistant",
-      "Eco-friendly WPC material",
+      "Eco-friendly WPC/UPVC material",
       "Low maintenance"
     ],
     gallery: [
@@ -1521,7 +1521,7 @@ export const products = [
       "Superior sound absorption",
       "Easy installation system",
       "Moisture and fire resistant",
-      "Eco-friendly WPC material",
+      "Eco-friendly WPC/UPVC material",
       "Low maintenance"
     ],
     gallery: [
@@ -1553,7 +1553,7 @@ export const products = [
       "Superior sound absorption",
       "Easy installation system",
       "Moisture and fire resistant",
-      "Eco-friendly WPC material",
+      "Eco-friendly WPC/UPVC material",
       "Low maintenance"
     ],
     gallery: [
@@ -1585,7 +1585,7 @@ export const products = [
       "Superior sound absorption",
       "Easy installation system",
       "Moisture and fire resistant",
-      "Eco-friendly WPC material",
+      "Eco-friendly WPC/UPVC material",
       "Low maintenance"
     ],
     gallery: [
@@ -1617,7 +1617,7 @@ export const products = [
       "Superior sound absorption",
       "Easy installation system",
       "Moisture and fire resistant",
-      "Eco-friendly WPC material",
+      "Eco-friendly WPC/UPVC material",
       "Low maintenance"
     ],
     gallery: [
@@ -1644,7 +1644,7 @@ export const products = [
     sqFeetPrice: "₹550 onwards",
     image: "/images/td-01-texture.webp",
     tags: ["Texture", "Doors"],
-    description: "High-quality WPC doors with superior durability and weather resistance. Perfect for interior and exterior applications with termite-proof construction and low maintenance requirements.",
+    description: "High-quality WPC/UPVC doors with superior durability and weather resistance. Perfect for interior and exterior applications with termite-proof construction and low maintenance requirements.",
     features: [
       "Natural stone texture",
       "Slip resistant surface",
@@ -1664,7 +1664,7 @@ export const products = [
       { project: "Restaurant Interior", price: "₹550/sq ft" }
     ],
     reviews: [
-      { name: "Anil Kumar", rating: 4, comment: "Great WPC doors! Very durable and the texture looks authentic. Good for bathrooms." },
+      { name: "Anil Kumar", rating: 4, comment: "Great WPC/UPVC doors! Very durable and the texture looks authentic. Good for bathrooms." },
       { name: "Savita Joshi", rating: 5, comment: "Excellent Treeplast doors with superior water resistance. Perfect choice!" }
     ]
   },
@@ -1676,7 +1676,7 @@ export const products = [
     sqFeetPrice: "₹550 onwards",
     image: "/images/td-04-texture.webp",
     tags: ["Texture", "Doors"],
-    description: "High-quality WPC doors with superior durability and weather resistance. Perfect for interior and exterior applications with termite-proof construction and low maintenance requirements.",
+    description: "High-quality WPC/UPVC doors with superior durability and weather resistance. Perfect for interior and exterior applications with termite-proof construction and low maintenance requirements.",
     features: [
       "Natural stone texture",
       "Slip resistant surface",
@@ -1696,7 +1696,7 @@ export const products = [
       { project: "Restaurant Interior", price: "₹550/sq ft" }
     ],
     reviews: [
-      { name: "Ramesh Yadav", rating: 4, comment: "Very good WPC doors with excellent weather resistance. Great for outdoor use." },
+      { name: "Ramesh Yadav", rating: 4, comment: "Very good WPC/UPVC doors with excellent weather resistance. Great for outdoor use." },
       { name: "Neetu Singh", rating: 3, comment: "Decent doors but hardware could be better. Average quality for the price." }
     ]
   },
@@ -1708,7 +1708,7 @@ export const products = [
     sqFeetPrice: "₹550 onwards",
     image: "/images/td-07-texture.webp",
     tags: ["Texture", "Doors"],
-    description: "High-quality WPC doors with superior durability and weather resistance. Perfect for interior and exterior applications with termite-proof construction and low maintenance requirements.",
+    description: "High-quality WPC/UPVC doors with superior durability and weather resistance. Perfect for interior and exterior applications with termite-proof construction and low maintenance requirements.",
     features: [
       "Natural stone texture",
       "Slip resistant surface",
@@ -1728,7 +1728,7 @@ export const products = [
       { project: "Restaurant Interior", price: "₹550/sq ft" }
     ],
     reviews: [
-      { name: "Sushil Gupta", rating: 5, comment: "Outstanding WPC doors! The texture is beautiful and very resistant to moisture." },
+      { name: "Sushil Gupta", rating: 5, comment: "Outstanding WPC/UPVC doors! The texture is beautiful and very resistant to moisture." },
       { name: "Priyanka Verma", rating: 4, comment: "Excellent Treeplast doors with good finish quality. Recommended for homes!" }
     ]
   },

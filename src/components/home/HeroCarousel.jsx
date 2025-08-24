@@ -15,37 +15,37 @@ const HeroCarousel = () => {
 
   const carouselImages = [
     {
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7",
+      image: "/images/HeroCarousel/Kitchenn.jpeg",
       title: "Premium WPC/UPVC Kitchen Solutions",
-      subtitle: "Transform your kitchen with our waterproof, durable WPC modular designs",
+      subtitle: "Transform your kitchen with our waterproof, durable WPC/UPVC modular designs",
       cta: "Explore Kitchens",
       link: "/Products"
     },
     {
-      image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267",
+      image: "/images/HeroCarousel/Bedroom.jpeg",
       title: "Luxury WPC/UPVC Bedroom Wardrobes",
-      subtitle: "Create stunning bedrooms with our eco-friendly WPC storage solutions",
+      subtitle: "Create stunning bedrooms with our eco-friendly WPC/UPVC storage solutions",
       cta: "View Bedrooms",
       link: "/Products"
     },
     {
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c",
+      image: "/images/HeroCarousel/Office.jpeg",
       title: "Modern WPC/UPVC Office Interiors",
-      subtitle: "Professional workspace solutions with sustainable WPC materials",
+      subtitle: "Professional workspace solutions with sustainable WPC/UPVC materials",
       cta: "Office Solutions",
       link: "/Products"
     },
     {
-      image: "https://images.unsplash.com/photo-1545041454-6f53b06c6ed2",
+      image: "/images/HeroCarousel/Celling.jpg",
       title: "Innovative WPC/UPVC Ceiling Designs",
       subtitle: "Acoustic and aesthetic ceiling solutions for every space",
       cta: "Ceiling Options",
       link: "/products"
     },
     {
-      image: "https://images.unsplash.com/photo-1545041454-6f53b06c6ed2",
-      title: "Innovative WPC/UPVC Ceiling Designs",
-      subtitle: "Acoustic and aesthetic ceiling solutions for every space",
+      image: "/images/HeroCarousel/Window.jpg",
+      title: "Innovative Aluminium Slifing Window",
+      subtitle: "Acoustic and aesthetic Sliding Window solutions for every space",
       cta: "Ceiling Options",
       link: "/products"
     }

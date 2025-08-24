@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 flex items-center justify-center">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fe069f4e12ad141ca8286e47c21c4220d%2F816acb718bc944088a8df0fcd7ba492d?format=webp&width=200"
+                  src="/Logo.png"
                   alt="Shubh Aangan Logo"
                   className="w-12 h-12 object-contain drop-shadow-lg"
                   loading="lazy"

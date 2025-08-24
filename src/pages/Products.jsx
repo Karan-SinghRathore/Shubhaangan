@@ -115,8 +115,8 @@ const Products = () => {
       <FloatingActions />
       <SEO 
         title="WPC Products - ShubhAangan | Premium WPC Sheets & Solutions"
-        description="Browse our extensive collection of premium WPC sheets including glossy finishes, Matt designs, and ceiling solutions. Find the perfect WPC materials for your modular kitchen, bedroom, and office projects."
-        keywords="WPC sheets, modular kitchen, bedroom furniture, office furniture, ceiling panels, glossy sheets, texture sheets"
+        description="Browse our extensive collection of premium WPC/UPVC sheets including glossy finishes, Matt designs, and ceiling solutions. Find the perfect WPC materials for your modular kitchen, bedroom, and office projects."
+        keywords="WPC/Upvc sheets, modular kitchen, bedroom furniture, office furniture, ceiling panels, glossy sheets, texture sheets"
       />
 
       <Navbar />

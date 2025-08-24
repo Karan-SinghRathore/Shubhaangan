@@ -204,7 +204,7 @@ const GalleryCategory = () => {
       name: 'TV Cabinet',
       icon: <Tv size={40} />,
       description: 'Modern TV cabinets with integrated storage and style',
-      longDescription: 'Enhance your entertainment area with our stylish WPC TV cabinets. Featuring cable management, LED strip integration, and hidden storage, our designs perfectly complement modern living spaces.',
+      longDescription: 'Enhance your entertainment area with our stylish WPC/UPVC TV cabinets. Featuring cable management, LED strip integration, and hidden storage, our designs perfectly complement modern living spaces.',
       projectTime: '4-7 days',
       warranty: '8 years',
       rating: 4.6,
