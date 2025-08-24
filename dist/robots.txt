@@ -1,5 +1,5 @@
 # ShubhAangan - Premium WPC UPVC Furniture Solutions
-# Robots.txt for https://shubhaangan.com
+# Robots.txt for https://shubhaanganhd.com
 
 User-agent: *
 Allow: /
@@ -68,11 +68,11 @@ User-agent: WhatsApp
 Allow: /
 
 # Sitemap location
-Sitemap: https://shubhaangan.com/sitemap.xml
+Sitemap: https://shubhaanganhd.com/sitemap.xml
 
 # Additional information
 # Contact: shubhaanganhd@gmail.com
-# Website: https://shubhaangan.com
+# Website: https://shubhaanganhd.com
 # Business: Premium WPC/UPVC Modular Furniture Solutions
 # Location: Jaipur, Rajasthan, India
 # Services: Modular Kitchen, Wardrobes, Office Furniture, Ceiling Solutions

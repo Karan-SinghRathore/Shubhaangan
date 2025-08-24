@@ -3,13 +3,13 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://shubhaangan.com/#organization",
+      "@id": "https://shubhaanganhd.com/#organization",
       "name": "ShubhAangan",
       "alternateName": ["Shubh Aangan", "ShubhAangan Furniture"],
-      "url": "https://shubhaangan.com",
+      "url": "https://shubhaanganhd.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://shubhaangan.com/logo.png",
+        "url": "https://shubhaanganhd.com/logo.png",
         "width": 300,
         "height": 300
       },
@@ -34,7 +34,7 @@
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://shubhaangan.com/#localbusiness",
+      "@id": "https://shubhaanganhd.com/#localbusiness",
       "name": "ShubhAangan",
       "description": "Premium WPC UPVC modular furniture solutions in Jaipur",
       "address": {
@@ -52,7 +52,7 @@
       },
       "telephone": "+91-8114468410",
       "email": "shubhaanganhd@gmail.com",
-      "url": "https://shubhaangan.com",
+      "url": "https://shubhaanganhd.com",
       "priceRange": "₹₹₹",
       "openingHours": ["Mo-Fr 09:00-18:00", "Sa 10:00-16:00"],
       "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer", "UPI"],
@@ -60,7 +60,7 @@
     },
     {
       "@type": "FAQPage",
-      "@id": "https://shubhaangan.com/#faq",
+      "@id": "https://shubhaanganhd.com/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -106,55 +106,55 @@
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://shubhaangan.com/#breadcrumb",
+      "@id": "https://shubhaanganhd.com/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://shubhaangan.com/"
+          "item": "https://shubhaanganhd.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Products",
-          "item": "https://shubhaangan.com/products"
+          "item": "https://shubhaanganhd.com/products"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Gallery",
-          "item": "https://shubhaangan.com/gallery"
+          "item": "https://shubhaanganhd.com/gallery"
         },
         {
           "@type": "ListItem",
           "position": 4,
           "name": "About",
-          "item": "https://shubhaangan.com/about"
+          "item": "https://shubhaanganhd.com/about"
         },
         {
           "@type": "ListItem",
           "position": 5,
           "name": "Contact",
-          "item": "https://shubhaangan.com/contact"
+          "item": "https://shubhaanganhd.com/contact"
         }
       ]
     },
     {
       "@type": "WebSite",
-      "@id": "https://shubhaangan.com/#website",
-      "url": "https://shubhaangan.com",
+      "@id": "https://shubhaanganhd.com/#website",
+      "url": "https://shubhaanganhd.com",
       "name": "ShubhAangan - Premium WPC UPVC Furniture Solutions",
       "description": "Leading WPC UPVC modular furniture manufacturer in Jaipur, Rajasthan. Premium kitchen cabinets, wardrobes, office furniture & interior solutions.",
       "publisher": {
-        "@id": "https://shubhaangan.com/#organization"
+        "@id": "https://shubhaanganhd.com/#organization"
       },
       "potentialAction": [
         {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://shubhaangan.com/products?search={search_term_string}"
+            "urlTemplate": "https://shubhaanganhd.com/products?search={search_term_string}"
           },
           "query-input": "required name=search_term_string"
         }
@@ -162,10 +162,10 @@
     },
     {
       "@type": "Service",
-      "@id": "https://shubhaangan.com/#service",
+      "@id": "https://shubhaanganhd.com/#service",
       "name": "WPC UPVC Modular Furniture Solutions",
       "provider": {
-        "@id": "https://shubhaangan.com/#organization"
+        "@id": "https://shubhaanganhd.com/#organization"
       },
       "serviceType": "Furniture Manufacturing and Installation",
       "description": "Comprehensive WPC UPVC modular furniture solutions including kitchen cabinets, wardrobes, office furniture, and interior design services",

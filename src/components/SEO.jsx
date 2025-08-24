@@ -16,7 +16,7 @@ const SEO = ({
     "name": "ShubhAangan",
     "alternateName": ["Shubh Aangan", "ShubhAangan Furniture", "ShubhAangan WPC UPVC"],
     "description": "Premium WPC/UPVC modular furniture solutions including kitchen cabinets, wardrobes, office furniture, ceiling designs and interior solutions in Jaipur, Rajasthan",
-    "url": "https://shubhaangan.com",
+    "url": "https://shubhaanganhd.com",
     "telephone": "+91-8114468410",
     "email": "shubhaanganhd@gmail.com",
     "logo": "https://shubhaanganhd.com/logo.png",
@@ -250,7 +250,7 @@ const SEO = ({
       <meta name="DC.publisher" content="ShubhAangan" />
       <meta name="DC.type" content="Service" />
       <meta name="DC.format" content="text/html" />
-      <meta name="DC.identifier" content="https://shubhaangan.com" />
+      <meta name="DC.identifier" content="https://shubhaanganhd.com" />
       <meta name="DC.language" content="en-IN" />
       <meta name="DC.coverage" content="Jaipur, Rajasthan, India" />
 
@@ -271,8 +271,8 @@ const SEO = ({
       <meta name="revised" content={new Date().toISOString().split('T')[0]} />
       <meta name="reply-to" content="shubhaanganhd@gmail.com" />
       <meta name="owner" content="ShubhAangan" />
-      <meta name="url" content="https://shubhaangan.com" />
-      <meta name="identifier-URL" content="https://shubhaangan.com" />
+      <meta name="url" content="https://shubhaanganhd.com" />
+      <meta name="identifier-URL" content="https://shubhaanganhd.com" />
       <meta name="directory" content="submission" />
       <meta name="pagename" content={title} />
       <meta name="subtitle" content="Premium WPC UPVC Modular Furniture Solutions" />
