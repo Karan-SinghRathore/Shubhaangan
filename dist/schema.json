@@ -1,0 +1,204 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://shubhaangan.com/#organization",
+      "name": "ShubhAangan",
+      "alternateName": ["Shubh Aangan", "ShubhAangan Furniture"],
+      "url": "https://shubhaangan.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shubhaangan.com/logo.png",
+        "width": 300,
+        "height": 300
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7",
+        "width": 1200,
+        "height": 630
+      },
+      "sameAs": [
+        "https://www.facebook.com/shubhaangan",
+        "https://www.instagram.com/shubhaangan",
+        "https://www.linkedin.com/company/shubhaangan"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-8114468410",
+        "contactType": "customer service",
+        "email": "shubhaanganhd@gmail.com",
+        "availableLanguage": ["English", "Hindi"]
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://shubhaangan.com/#localbusiness",
+      "name": "ShubhAangan",
+      "description": "Premium WPC UPVC modular furniture solutions in Jaipur",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "JagatPura",
+        "addressLocality": "Jaipur",
+        "addressRegion": "Rajasthan",
+        "postalCode": "302017",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.9124,
+        "longitude": 75.7873
+      },
+      "telephone": "+91-8114468410",
+      "email": "shubhaanganhd@gmail.com",
+      "url": "https://shubhaangan.com",
+      "priceRange": "₹₹₹",
+      "openingHours": ["Mo-Fr 09:00-18:00", "Sa 10:00-16:00"],
+      "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer", "UPI"],
+      "currenciesAccepted": "INR"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://shubhaangan.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is WPC/UPVC and why is it better for furniture?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WPC (Wood Plastic Composite) and UPVC (Unplasticized Polyvinyl Chloride) are advanced materials that offer superior benefits over traditional wood. They are 100% waterproof, termite-resistant, eco-friendly, and require minimal maintenance while providing the aesthetic appeal of natural wood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a modular kitchen installation take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typically, a modular kitchen installation takes 10-15 days from measurement to completion. This includes design finalization, manufacturing, and professional installation by our expert team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide warranty on WPC/UPVC products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We provide up to 10 years warranty on our WPC/UPVC kitchen cabinets, 7 years on wall panels, and 5 years on ceiling solutions. Our warranty covers manufacturing defects and structural integrity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas do you serve for installation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We primarily serve Jaipur and surrounding areas in Rajasthan. For projects outside our standard service area, please contact us to discuss logistics and feasibility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are WPC/UPVC materials safe for kitchen use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WPC/UPVC materials are completely food-safe and non-toxic. They're also heat-resistant, moisture-proof, and easy to clean, making them ideal for kitchen environments."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://shubhaangan.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://shubhaangan.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://shubhaangan.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Gallery",
+          "item": "https://shubhaangan.com/gallery"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "About",
+          "item": "https://shubhaangan.com/about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Contact",
+          "item": "https://shubhaangan.com/contact"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://shubhaangan.com/#website",
+      "url": "https://shubhaangan.com",
+      "name": "ShubhAangan - Premium WPC UPVC Furniture Solutions",
+      "description": "Leading WPC UPVC modular furniture manufacturer in Jaipur, Rajasthan. Premium kitchen cabinets, wardrobes, office furniture & interior solutions.",
+      "publisher": {
+        "@id": "https://shubhaangan.com/#organization"
+      },
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://shubhaangan.com/products?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://shubhaangan.com/#service",
+      "name": "WPC UPVC Modular Furniture Solutions",
+      "provider": {
+        "@id": "https://shubhaangan.com/#organization"
+      },
+      "serviceType": "Furniture Manufacturing and Installation",
+      "description": "Comprehensive WPC UPVC modular furniture solutions including kitchen cabinets, wardrobes, office furniture, and interior design services",
+      "areaServed": {
+        "@type": "State",
+        "name": "Rajasthan"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "WPC UPVC Furniture Services",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Modular Kitchen Solutions",
+            "description": "Custom WPC UPVC modular kitchens with waterproof and termite-resistant properties"
+          },
+          {
+            "@type": "OfferCatalog", 
+            "name": "Bedroom Furniture",
+            "description": "WPC UPVC wardrobes, storage solutions and bedroom furniture"
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Office Furniture", 
+            "description": "Professional WPC UPVC office furniture and commercial solutions"
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Interior Solutions",
+            "description": "Complete interior solutions including ceiling, wall panels and accessories"
+          }
+        ]
+      }
+    }
+  ]
+}
