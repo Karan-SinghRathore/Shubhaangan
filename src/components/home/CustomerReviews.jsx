@@ -19,7 +19,7 @@ const CustomerReviews = () => {
     },
     {
       name: "Harsh Gupta",
-      rating: 4.5,
+      rating: 4,
       comment: "Perfect WPC/UPVC solutions for our restaurant. Durable, beautiful, and easy to maintain. Highly recommended!",
       project: "Restaurant Design"
     }
@@ -60,9 +60,12 @@ const CustomerReviews = () => {
                 style={{ background: 'linear-gradient(135deg, hsl(var(--wpc-natural)) 0%, rgba(255, 255, 255, 0.95) 100%)' }}>
                 <CardContent className="p-8">
                   <div className="flex items-center mb-4">
-                    {[...Array(review.rating)].map((_, i) => (
+                    {[...Array(Math.floor(review.rating))].map((_, i) => (
                       <Star key={i} className="text-yellow-400 fill-current" size={20} />
                     ))}
+                    {review.rating % 1 !== 0 && (
+                      <Star key="half" className="text-yellow-400 fill-current opacity-50" size={20} />
+                    )}
                   </div>
                   <p className="mb-6 italic text-body leading-relaxed">"{review.comment}"</p>
                   <div>

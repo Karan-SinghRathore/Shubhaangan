@@ -1,0 +1,78 @@
+# ShubhAangan - Premium WPC UPVC Furniture Solutions
+# Robots.txt for https://shubhaangan.com
+
+User-agent: *
+Allow: /
+Allow: /gallery
+Allow: /gallery/*
+Allow: /products
+Allow: /product/*
+Allow: /about
+Allow: /contact
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+
+# Disallow admin and development files
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.env
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.git/
+Disallow: /build/
+Disallow: /dist/
+Disallow: /*.json$
+Disallow: /*.map$
+
+# Allow specific bots for better crawling
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Sitemap location
+Sitemap: https://shubhaangan.com/sitemap.xml
+
+# Additional information
+# Contact: shubhaanganhd@gmail.com
+# Website: https://shubhaangan.com
+# Business: Premium WPC/UPVC Modular Furniture Solutions
+# Location: Jaipur, Rajasthan, India
+# Services: Modular Kitchen, Wardrobes, Office Furniture, Ceiling Solutions

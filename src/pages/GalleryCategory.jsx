@@ -33,6 +33,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import FloatingActions from '@/components/FloatingActions';
 import SEO from '@/components/SEO';
+import OptimizedImage from '@/components/OptimizedImage';
 
 const GalleryCategory = () => {
   const { categoryId } = useParams();
@@ -237,6 +238,48 @@ const GalleryCategory = () => {
         { name: 'Vikash Sharma', rating: 5, comment: 'Perfect TV cabinet! The cable management is excellent and it looks very premium.', project: 'Living Room Entertainment Center' },
         { name: 'Shreya Patel', rating: 4, comment: 'Great storage space and the design matches our modern decor perfectly.', project: 'Family Room TV Unit' }
       ]
+    },
+    aluminum: {
+      id: 'aluminum',
+      name: 'Aluminum Products',
+      icon: <Square size={40} />,
+      description: 'Premium aluminum sliding windows, doors and building solutions',
+      longDescription: 'Transform your spaces with our premium aluminum products including sliding windows, doors, and modern facades. Our aluminum solutions offer superior durability, energy efficiency, and contemporary aesthetics perfect for residential and commercial applications.',
+      priceRange: '₹350 - ₹800 /sq ft',
+      projectTime: '7-10 days',
+      warranty: '15 years',
+      rating: 4.7,
+      completedProjects: 150,
+      image: 'https://images.pexels.com/photos/842153/pexels-photo-842153.jpeg',
+      characteristics: [
+        { icon: <Shield size={24} />, title: 'Corrosion Resistant', desc: 'Superior protection against rust and weather' },
+        { icon: <Zap size={24} />, title: 'Energy Efficient', desc: 'Thermal insulation for better energy savings' },
+        { icon: <CheckCircle size={24} />, title: 'Low Maintenance', desc: 'Minimal upkeep required for long-lasting performance' },
+        { icon: <Sparkles size={24} />, title: 'Modern Design', desc: 'Contemporary aesthetics for modern architecture' }
+      ],
+      features: [
+        'Sliding Windows', 'Aluminum Doors', 'Modern Facades',
+        'Balcony Railings', 'Weather Sealing', 'Thermal Break',
+        'Powder Coating', 'Security Features'
+      ],
+      gallery: [
+        'https://images.pexels.com/photos/842153/pexels-photo-842153.jpeg',
+        'https://images.pexels.com/photos/4682126/pexels-photo-4682126.jpeg',
+        'https://images.pexels.com/photos/5271210/pexels-photo-5271210.jpeg',
+        'https://images.pexels.com/photos/19086451/pexels-photo-19086451.jpeg',
+        'https://images.pexels.com/photos/210464/pexels-photo-210464.jpeg',
+        'https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg'
+      ],
+      process: [
+        { step: 1, title: 'Site Measurement', desc: 'Precise measurement and structural assessment' },
+        { step: 2, title: 'Design Planning', desc: 'Custom design based on requirements' },
+        { step: 3, title: 'Manufacturing', desc: 'Precision fabrication with quality materials' },
+        { step: 4, title: 'Installation', desc: 'Professional installation and finishing' }
+      ],
+      testimonials: [
+        { name: 'Karan Malhotra', rating: 5, comment: 'Excellent aluminum windows! Great quality and the sliding mechanism is smooth even after 3 years.', project: 'Modern Villa Windows' },
+        { name: 'Sunita Jain', rating: 4, comment: 'Beautiful aluminum doors with perfect finishing. Very happy with the result and service.', project: 'Office Building Entrance' }
+      ]
     }
   };
 
@@ -344,10 +387,13 @@ const GalleryCategory = () => {
               transition={{ duration: 0.6 }}
               className="relative"
             >
-              <img
+              <OptimizedImage
                 src={category.gallery[selectedImageIndex]}
                 alt={category.name}
-                className="w-full h-96 object-cover rounded-xl shadow-2xl"
+                width={800}
+                height={600}
+                className="w-full h-96 rounded-xl shadow-2xl"
+                priority={true}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl" />
             </motion.div>
@@ -404,26 +450,26 @@ const GalleryCategory = () => {
             <p className="text-xl text-gray-600">Real projects, real results</p>
           </motion.div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gallery-grid">
             {category.gallery.map((image, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="relative group cursor-pointer"
+                className="relative group cursor-pointer gallery-item"
                 onClick={() => setSelectedImageIndex(index)}
               >
-                <img
+                <OptimizedImage
                   src={image}
                   alt={`${category.name} ${index + 1}`}
-                  className="w-full h-48 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                  width={400}
+                  height={300}
+                  className="w-full h-48 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                  priority={index < 4}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
                 <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <Camera className="text-white" size={20} />
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

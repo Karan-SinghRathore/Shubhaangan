@@ -25,6 +25,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import FloatingActions from '@/components/FloatingActions';
 import SEO from '@/components/SEO';
+import OptimizedImage from '@/components/OptimizedImage';
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -167,6 +168,7 @@ const Gallery = () => {
       icon: <Square size={32} />,
       description: 'Premium aluminum sliding windows, doors and building solutions',
       shortDesc: 'Windows, doors & facades',
+      priceRange: '₹350 - ₹800 /sq ft',
       projectTime: '7-10 days',
       warranty: '15 years',
       popularFeatures: ['Sliding Windows', 'Aluminum Doors', 'Modern Facades', 'Balcony Railings'],
@@ -181,7 +183,9 @@ const Gallery = () => {
         'https://images.pexels.com/photos/842153/pexels-photo-842153.jpeg',
         'https://images.pexels.com/photos/4682126/pexels-photo-4682126.jpeg',
         'https://images.pexels.com/photos/5271210/pexels-photo-5271210.jpeg',
-        'https://images.pexels.com/photos/19086451/pexels-photo-19086451.jpeg'
+        'https://images.pexels.com/photos/19086451/pexels-photo-19086451.jpeg',
+        'https://images.pexels.com/photos/210464/pexels-photo-210464.jpeg',
+        'https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg'
       ]
     }
   ];
@@ -244,33 +248,27 @@ const Gallery = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               {/* Photo Gallery */}
               <div className="lg:col-span-2">
-                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6 }}
-                  className="mb-8"
-                >
+                <div className="mb-8">
                   <h2 className="text-2xl font-bold heading-secondary mb-6">Photo Gallery</h2>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                     {selectedCategoryData.gallery.map((image, index) => (
-                      <motion.div
+                      <div
                         key={index}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.6, delay: index * 0.1 }}
                         className="relative group cursor-pointer"
                       >
-                        <img
+                        <OptimizedImage
                           src={image}
                           alt={`${selectedCategoryData.name} ${index + 1}`}
-                          className="w-full h-48 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          loading="lazy"
+                          width={400}
+                          height={300}
+                          className="w-full h-48 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          priority={index < 3}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
-                      </motion.div>
+                      </div>
                     ))}
                   </div>
-                </motion.div>
+                </div>
               </div>
 
               {/* Sidebar */}
@@ -345,10 +343,11 @@ const Gallery = () => {
   return (
     <>
       <FloatingActions />
-      <SEO 
-        title="WPC Gallery - ShubhAangan | Kitchen, Ceiling, Wardrobe & More"
-        description="Explore our comprehensive WPC gallery featuring modular kitchens, false ceilings, wall panels, wardrobes, and TV cabinets. Premium WPC solutions for modern spaces."
-        keywords="WPC gallery, modular kitchen gallery, false ceiling designs, wardrobe designs, TV cabinet designs, wall panels, WPC furniture gallery"
+      <SEO
+        title="WPC UPVC Gallery Jaipur | Modular Kitchen Photos, Wardrobe Designs, Ceiling Images | ShubhAangan Projects"
+        description="Browse ShubhAangan's extensive WPC UPVC project gallery featuring 500+ modular kitchen designs, bedroom wardrobes, office furniture, false ceiling & wall panel installations in Jaipur. Real project photos with customer reviews. Get inspired for your dream home interior."
+        keywords="WPC gallery Jaipur, UPVC gallery, modular kitchen gallery, kitchen design photos, wardrobe design gallery, bedroom furniture photos, office furniture gallery, ceiling design images, wall panel gallery, TV cabinet designs, WPC furniture gallery, UPVC furniture photos, project gallery Jaipur, interior design gallery, kitchen renovation photos, furniture installation images, home makeover gallery, modular kitchen images, kitchen cabinet photos, wardrobe installation photos, office cabin gallery, false ceiling photos, WPC ceiling images, wall panel designs, 3D wall panel gallery, furniture showroom gallery, completed projects gallery, customer project photos, before after gallery, luxury kitchen gallery, modern kitchen designs, contemporary furniture gallery, premium furniture photos, budget kitchen gallery, affordable furniture images, custom furniture gallery, bespoke furniture photos, furniture manufacturer gallery, interior contractor portfolio, Jaipur furniture gallery, Rajasthan interior gallery, North India furniture photos, home furniture gallery, commercial furniture gallery, residential project gallery, villa furniture photos, apartment interior gallery, builder project photos, real estate furniture gallery, hotel furniture photos, restaurant design gallery, kitchen storage gallery, bedroom storage photos, office storage solutions, furniture design gallery, interior solutions gallery, space optimization photos, storage solutions gallery, furniture trends gallery, design inspiration photos, modern home gallery, traditional furniture gallery, eco-friendly furniture gallery, sustainable design photos, waterproof furniture gallery, termite-proof furniture photos, maintenance-free furniture gallery, durable furniture images, long-lasting furniture photos, quality furniture gallery, premium brand gallery, luxury furniture photos, ShubhAangan gallery, Shubh Aangan projects, furniture portfolio Jaipur, interior design portfolio, project showcase, design showcase, furniture exhibition, showroom gallery, furniture catalog, design catalog, project documentation, client testimonials gallery, customer reviews photos, success stories gallery, transformation gallery, renovation gallery, home improvement photos, interior transformation, furniture transformation, design evolution photos"
+        canonicalUrl="https://shubhaangan.com/gallery"
       />
       
       <Navbar />
@@ -381,21 +380,20 @@ const Gallery = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {galleryCategories.map((category, index) => (
-              <motion.div
+              <div
                 key={category.id}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-onClick={() => navigate(`/gallery/${category.id}`)}
+                onClick={() => navigate(`/gallery/${category.id}`)}
                 className="cursor-pointer group"
               >
                 <Card className="card-hover overflow-hidden shadow-xl border border-gray-100">
-                  <div className="relative">
-                    <img
+                  <div className="relative overflow-hidden">
+                    <OptimizedImage
                       src={category.image}
                       alt={category.name}
-                      className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                      loading="lazy"
+                      width={600}
+                      height={300}
+                      className="w-full h-48 group-hover:scale-110 transition-transform duration-300"
+                      priority={index < 3}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
@@ -453,7 +451,7 @@ onClick={() => navigate(`/gallery/${category.id}`)}
                     </Button>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

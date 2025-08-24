@@ -113,10 +113,11 @@ const Products = () => {
   return (
     <>
       <FloatingActions />
-      <SEO 
-        title="WPC Products - ShubhAangan | Premium WPC Sheets & Solutions"
-        description="Browse our extensive collection of premium WPC/UPVC sheets including glossy finishes, Matt designs, and ceiling solutions. Find the perfect WPC materials for your modular kitchen, bedroom, and office projects."
-        keywords="WPC/Upvc sheets, modular kitchen, bedroom furniture, office furniture, ceiling panels, glossy sheets, texture sheets"
+      <SEO
+        title="WPC UPVC Sheets Jaipur | Premium WPC Products, Boards, Panels | Best WPC Sheet Dealer Rajasthan"
+        description="Discover ShubhAangan's premium WPC/UPVC sheets collection in Jaipur. 100+ designs in glossy, matt, texture finishes for modular kitchen, wardrobe & furniture. Waterproof, termite-proof WPC boards. Best prices ₹45/sqft onwards. Wholesale & retail available."
+        keywords="WPC sheets Jaipur, UPVC sheets Rajasthan, WPC boards, UPVC boards, WPC panels, UPVC panels, WPC products, UPVC products, glossy WPC sheets, matt WPC sheets, texture WPC sheets, plain WPC sheets, decorative WPC sheets, laminated WPC sheets, WPC sheet dealer Jaipur, UPVC sheet supplier, WPC sheet manufacturer, WPC sheet price Jaipur, UPVC sheet price, wholesale WPC sheets, retail WPC sheets, bulk WPC sheets, WPC sheet distributor, kitchen WPC sheets, wardrobe WPC sheets, furniture WPC sheets, ceiling WPC sheets, wall WPC sheets, bathroom WPC sheets, outdoor WPC sheets, interior WPC sheets, commercial WPC sheets, residential WPC sheets, waterproof WPC sheets, termite proof WPC sheets, fire resistant WPC sheets, moisture resistant WPC sheets, eco-friendly WPC sheets, sustainable WPC products, durable WPC sheets, long-lasting WPC boards, maintenance-free WPC panels, easy-clean WPC sheets, stain-resistant WPC products, scratch-resistant WPC sheets, UV resistant WPC panels, weather resistant WPC sheets, high-quality WPC products, premium WPC sheets, luxury WPC boards, affordable WPC sheets, budget WPC panels, cost-effective WPC products, value-for-money WPC sheets, best WPC sheets, top WPC brands, imported WPC sheets, Indian WPC sheets, locally made WPC products, custom WPC sheets, made-to-order WPC panels, bespoke WPC products, WPC sheet cutting service, WPC sheet installation, WPC product consultation, WPC technical support, WPC design assistance, WPC color matching, WPC texture selection, WPC finish options, ShubhAangan WPC, Shubh Aangan products, WPC showroom Jaipur"
+        canonicalUrl="https://shubhaangan.com/products"
       />
 
       <Navbar />
